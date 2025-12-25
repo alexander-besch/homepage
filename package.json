@@ -1,0 +1,25 @@
+{
+    "name": "homepage_template",
+    "version": "1.0.0",
+    "description": "",
+    "license": "",
+    "author": "",
+    "type": "module",
+    "main": "src/build.tsx",
+    "scripts": {
+        "build": "tsc && node --enable-source-maps build/build.js",
+        "clean": "rm -rf build deploy cache"
+    },
+    "devDependencies": {
+        "@types/node": "^24.10.1",
+        "@types/react": "^19.2.6",
+        "@types/react-dom": "^19.2.3",
+        "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "lightningcss": "^1.30.2",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+        "sharp": "^0.34.5"
+    }
+}

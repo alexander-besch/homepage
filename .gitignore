@@ -1,0 +1,8 @@
+.env
+build/
+deploy/
+cache/
+node_modules/
+
+stacktrace*
+
