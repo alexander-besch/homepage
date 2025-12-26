@@ -2,11 +2,15 @@ import * as fs from "fs";
 import { renderToPipeableStream } from "react-dom/server";
 
 import IndexPage from "./components/index_page.js";
+import AboutPage from "./components/about_page.js";
 import { transform } from "lightningcss";
 
 async function buildStyles() {
+    // list of css-Files
     const sourcePaths = [
-        "./styles/index_page.module.css"
+        "./styles/index_page.module.css",
+        "./styles/about_page.module.css",
+        "./styles/layout.module.css",
     ];
     const destPath = "./deploy/styles.css";
     const sources = await Promise.all(sourcePaths.map(s => fs.promises.readFile(s)));
@@ -42,6 +46,7 @@ function buildLoadPathHTMLInBG(path: string, element: React.ReactNode) {
 // Build the route in the background.
 // Return immediately.
 function buildRouteInBG(route: string, element: React.ReactNode) {
+    ensureDirExists(`./deploy/${route}`)
     buildLoadPathHTMLInBG(`./deploy/${route}/index.html`, element);
 }
 
@@ -53,4 +58,8 @@ function ensureDirExists(dir: string): void {
 
 ensureDirExists("./deploy");
 buildStyles().catch(e => { throw e; });
-buildRouteInBG("/", <IndexPage some_text="How are you?" />);
+buildRouteInBG("/", <IndexPage some_text="First page" />);
+
+buildRouteInBG("/about", <AboutPage some_text="About Page" />);
+
+
