@@ -1,0 +1,35 @@
+name: Prod Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.12
+
+      - name: Clone Repo
+        uses: actions/checkout@v6
+        with:
+          submodules: true
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Clean
+        run: npm run clean
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.7.4
+        with:
+          branch: deploy
+          folder: deploy
