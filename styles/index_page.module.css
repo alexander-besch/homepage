@@ -1,3 +1,11 @@
-.index_page_some_heading {
-    color: red;
+.index_page h1 {
+    font-size: 20px;
+}
+
+.index_page h2 {
+    font-size: 15px;
+}
+
+.index_page p {
+    font-size: 10px;
 }

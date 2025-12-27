@@ -1,3 +1,48 @@
-.layout_heading {
-    color: green;
+.layout_header {
+    background-color: beige;
+    font-family: "MyScriptAlexander";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 28px;
+
+}
+
+.layout_header a {
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.layout_header a:hover {
+    background: lightgrey;
+}
+
+.layout_header_left {
+    color: blue;
+
+}
+
+.layout_header_right {
+    display: flex;
+    flex-direction: row;
+    color: red;
+    gap: 30px;
+
+}
+
+.layout_body {
+    background-color: aqua;
+    color: black;
+    font-family: "LiberationSans";
+
+}
+
+
+
+.layout_footer {
+    background-color: beige;
+    color: black;
+    font-family: "LiberationSans";
+
 }
