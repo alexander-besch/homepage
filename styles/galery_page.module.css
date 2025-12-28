@@ -1,3 +1,8 @@
-.galery_page_some_heading {
-    color: red;
-}
+ .galery_page_images img {
+     width: 500px;
+     height: auto;
+     margin: 10px;
+
+
+
+ }

@@ -75,7 +75,7 @@ function buildRouteInBG(route: string, element: React.ReactNode) {
     buildLoadPathHTMLInBG(`./deploy/${route}/index.html`, element);
 }
 
-function ensureDirExists(dir: string): void {
+export function ensureDirExists(dir: string): void {
     if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir, { recursive: true });
     }
