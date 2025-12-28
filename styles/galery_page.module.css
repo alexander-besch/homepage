@@ -1,7 +1,7 @@
  .galery_page_images img {
-     width: 500px;
+     width: 100%;
      height: auto;
-     margin: 10px;
+     padding: 10px;
 
 
 
