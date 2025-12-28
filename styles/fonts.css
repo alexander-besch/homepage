@@ -29,3 +29,12 @@
     font-style: italic;
     font-display: swap;
 }
+
+
+@font-face {
+    font-family: MyScriptAlexander;
+    src: url("/styles/fonts/MyScriptAlexander.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
