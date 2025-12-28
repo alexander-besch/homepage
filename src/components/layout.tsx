@@ -14,7 +14,7 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
         <body>
             <div className="layout_header">
                 <div className="layout_header_left">
-                    Alexander's Homepage
+                    Alexander's Art
                 </div>
                 <div className="layout_header_right">
                     <div>
