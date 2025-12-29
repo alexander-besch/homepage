@@ -2,7 +2,8 @@
     font-family: LiberationSans, sans-serif;
 
     --layout-nav-height: 80px;
-    --layout-nav-padding-right: calc((var(--layout-nav-height) - var(--layout-nav-burger-height)) / 2);
+    /* --layout-nav-padding-right: calc((var(--layout-nav-height) - var(--layout-nav-burger-height)) / 2);*/
+    --layout-nav-padding-right: 20px;
     --layout-nav-padding-left: 20px;
 
     --layout-nav-burger-height: 25px;
@@ -13,31 +14,30 @@
     --layout-content-padding: 20px;
     --layout-content-width: calc(100vw - 2 * var(--layout-content-padding));
     --layout-content-height: calc(100vh - var(--layout-nav-height) - var(--layout-footer-height));
-    --layout-content-top: calc(var(--layout-nav-height) + var(--layout-content-padding));
+
 
     --layout-footer-height: 30px;
 }
 
-
-
-.layout_navbar {
+.layout_navbar_wrapper {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1100;
+}
 
+
+.layout_navbar {
     font-family: "MyScriptAlexander";
-    height: var(--layout-nav-height);
     display: flex;
     flex-direction: row;
     gap: var(--layout-nav-padding-right);
     justify-content: space-between;
     align-items: center;
+    height: var(--layout-nav-height);
     padding-left: var(--layout-nav-padding-left);
     padding-right: var(--layout-nav-padding-right);
     background-color: beige;
-
 }
 
 .layout_navbar a {
@@ -55,9 +55,7 @@
     display: none;
 }
 
-.layout_navbar_left {
-    padding-left: var(--layout-nav-padding-left);
-}
+
 
 .layout_navbar_desktop {
     font-size: 18px;
@@ -113,11 +111,9 @@
 }
 
 
-.layout_navbar_right {
-    padding-right: var(--layout-nav-padding-right);
-}
 
-@media (max-width: 800px) {
+
+@media (max-width: 500px) {
     .layout_navbar_hamburger {
         display: flex;
     }
@@ -147,11 +143,6 @@
 
 
 
-
-
-
-
-
 .layout_navbar_right a {
     color: blue;
 }
@@ -162,10 +153,16 @@
     background-color: aqua;
     color: black;
     font-family: "LiberationSans";
-    padding-top: var(--layout-content-top);
+    margin-top: var(--layout-nav-height);
+    padding-top: var(--layout-content-padding);
     padding-right: var(--layout-content-padding);
     padding-left: var(--layout-content-padding);
     padding-bottom: var(--layout-content-padding);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-top: 20px;*/
+    /*margin-bottom: 20px;*/
 }
 
 

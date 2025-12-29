@@ -83,7 +83,8 @@ export function ensureDirExists(dir: string): void {
 
 ensureDirExists("./deploy");
 buildStyles().catch(e => { throw e; });
-buildRouteInBG("/", <IndexPage parameter_01="Testparameter" />);
+//buildRouteInBG("/", <IndexPage parameter_01="Testparameter" />);
+buildRouteInBG("/", <IndexPage />);
 
 buildRouteInBG("/galery", <GaleryPage />);
 

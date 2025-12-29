@@ -12,40 +12,41 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
         </head>
 
         <body>
-            <div className="layout_navbar">
+            <div className="layout_navbar_wrapper">
+
+                <div className="layout_navbar">
+
+                    <div className="layout_navbar_left">
+                        <input id="layout_navbar_toggle" type="checkbox"></input>
+                        <label htmlFor="layout_navbar_toggle" className="layout_navbar_hamburger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </label>
 
 
-                <div className="layout_navbar_left">
-                    <input id="layout_navbar_toggle" type="checkbox"></input>
-                    <label htmlFor="layout_navbar_toggle" className="layout_navbar_hamburger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </label>
-
-
-                    <div className="layout_navbar_desktop">
-                        <div>
-                            <a href="/">Home</a>
+                        <div className="layout_navbar_desktop">
+                            <div>
+                                <a href="/">Home</a>
+                            </div>
+                            <div>
+                                <a href="/galery">Galery</a>
+                            </div>
+                            <div>
+                                <a href="/about">About</a>
+                            </div>
                         </div>
-                        <div>
-                            <a href="/galery">Galery</a>
-                        </div>
-                        <div>
-                            <a href="/about">About</a>
-                        </div>
+
                     </div>
 
-                </div>
 
-
-                <div className="layout_navbar_right">
-                    <div>
-                        <a href="/">Alexander's Art</a>
+                    <div className="layout_navbar_right">
+                        <div>
+                            <a href="/">Alexander's Art</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
 
             <div className="layout_navbar_burgeritems">
                 <li><a href="/">Home</a></li>
