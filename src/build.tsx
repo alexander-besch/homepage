@@ -2,7 +2,7 @@ import * as fs from "fs";
 import { renderToPipeableStream } from "react-dom/server";
 
 import IndexPage from "./components/index_page.js";
-import GaleryPage from "./components/galery_page.js";
+import GalleryPage from "./components/gallery_page.js";
 import AboutPage from "./components/about_page.js";
 import { transform } from "lightningcss";
 import path from "path";
@@ -14,7 +14,7 @@ async function buildStyles() {
         "./styles/layout.module.css",
         "./styles/fonts.css",
         "./styles/index_page.module.css",
-        "./styles/galery_page.module.css",
+        "./styles/gallery_page.module.css",
         "./styles/about_page.module.css",
     ];
     const destPath = "./deploy/styles.css";
@@ -86,7 +86,7 @@ buildStyles().catch(e => { throw e; });
 //buildRouteInBG("/", <IndexPage parameter_01="Testparameter" />);
 buildRouteInBG("/", <IndexPage />);
 
-buildRouteInBG("/galery", <GaleryPage />);
+buildRouteInBG("/galery", <GalleryPage />);
 
 buildRouteInBG("/about", <AboutPage parameter_01="About Page" />);
 

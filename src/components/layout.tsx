@@ -30,7 +30,7 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
                                 <a href="/">Home</a>
                             </div>
                             <div>
-                                <a href="/galery">Galery</a>
+                                <a href="/gallery">Gallery</a>
                             </div>
                             <div>
                                 <a href="/about">About</a>
@@ -50,7 +50,7 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
 
             <div className="layout_navbar_burgeritems">
                 <li><a href="/">Home</a></li>
-                <li><a href="/galery">Galery</a></li>
+                <li><a href="/gallery">Gallery</a></li>
                 <li><a href="/about">About</a></li>
             </div>
 
