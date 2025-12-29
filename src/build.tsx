@@ -86,7 +86,7 @@ buildStyles().catch(e => { throw e; });
 //buildRouteInBG("/", <IndexPage parameter_01="Testparameter" />);
 buildRouteInBG("/", <IndexPage />);
 
-buildRouteInBG("/galery", <GalleryPage />);
+buildRouteInBG("/gallery", <GalleryPage />);
 
 buildRouteInBG("/about", <AboutPage parameter_01="About Page" />);
 
