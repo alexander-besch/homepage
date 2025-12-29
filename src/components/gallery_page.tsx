@@ -12,6 +12,11 @@ export default function GalleryPage(): React.ReactNode {
             <Image inputPath="./resources/ID_7.jpg" lazy={false} />
             <br />
         </div>
+        <div className="gallery_page_images">
+            <Image inputPath="./resources/Loewe.JPG" lazy={false} />
+            <br />
+        </div>
+
     </Layout>
 
 }

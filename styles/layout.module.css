@@ -91,7 +91,7 @@
     padding-top: 20px;
     box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
     height: 100vh;
-    width: 80%;
+    width: 60%;
     transform: translateX(-150%);
     display: flex;
     flex-direction: column;
