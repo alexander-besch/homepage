@@ -8,13 +8,16 @@ export default function GalleryPage(): React.ReactNode {
 
         <a href="/">Home</a>
         <br />
-        <div className="gallery_page_images">
-            <Image inputPath="./resources/ID_7.jpg" lazy={false} />
-            <br />
-        </div>
-        <div className="gallery_page_images">
-            <Image inputPath="./resources/Loewe.JPG" lazy={false} />
-            <br />
+        <div className="gallery_page_images_list">
+
+            <div className="gallery_page_image_card">
+                <Image inputPath="./resources/ID_7.jpg" lazy={false} />
+
+            </div>
+            <div className="gallery_page_image_card">
+                <Image inputPath="./resources/Loewe.JPG" lazy={false} />
+
+            </div>
         </div>
 
     </Layout>
