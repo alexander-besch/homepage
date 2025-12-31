@@ -8,7 +8,7 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
             <title>{props.title}</title>
             <meta name="viewport" content="width=device-width,initial-scale=1" />
             <link rel="stylesheet" type="text/css" href="/styles.css" />
-            <link rel="icon" type="image/png" sizes="245x245" href="/favicon.png" />
+            <link rel="icon" type="image/png" sizes="433x501" href="/favicon.png" />
         </head>
 
         <body>
