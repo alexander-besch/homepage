@@ -3,6 +3,7 @@
 
     --layout-nav-height: 80px;
     --layout-nav-logo-height: 60px;
+    --layout-nav-logo-height_a: 50px;
     /* --layout-nav-padding-right: calc((var(--layout-nav-height) - var(--layout-nav-burger-height)) / 2);*/
     --layout-nav-padding-right: 20px;
     --layout-nav-padding-left: 20px;
@@ -38,12 +39,12 @@
     height: var(--layout-nav-height);
     padding-left: var(--layout-nav-padding-left);
     padding-right: var(--layout-nav-padding-right);
-    background-color: beige;
+    background-color: lightgray;
 }
 
 .layout_navbar a {
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 10px;
     border-radius: 3px;
 }
 
@@ -59,7 +60,6 @@
 
 
 .layout_navbar_desktop {
-    font-size: 18px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -67,7 +67,8 @@
 }
 
 .layout_navbar_desktop a {
-    color: red;
+    color: black;
+    font-size: 38px;
 }
 
 .layout_navbar_hamburger {
@@ -114,7 +115,7 @@
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 720px) {
     .layout_navbar_hamburger {
         display: flex;
     }
@@ -142,18 +143,20 @@
 }
 
 
-
+@media (max-width: 360px) {
+    .layout_navbar_right img {
+        height: var(--layout-nav-logo-height_a);
+    }
+}
 
 .layout_navbar_right img {
     height: var(--layout-nav-logo-height);
-    margin: 10px;
-    padding: 10px;
 }
 
 
 
 .layout_body {
-    background-color: aqua;
+    background-color: white;
     color: black;
     font-family: "LiberationSans";
     margin-top: var(--layout-nav-height);
@@ -171,7 +174,7 @@
 
 
 .layout_footer {
-    background-color: beige;
+    background-color: lightgrey;
     color: black;
     font-family: "LiberationSans";
 
