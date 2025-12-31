@@ -3,6 +3,7 @@
 
     --layout-nav-height: 80px;
     --layout-nav-logo-height: 60px;
+    --layout-nav-logo-height_middle: 50px;
     --layout-nav-logo-height_small: 40px;
     /* --layout-nav-padding-right: calc((var(--layout-nav-height) - var(--layout-nav-burger-height)) / 2);*/
     --layout-nav-padding-right: 20px;
@@ -151,6 +152,14 @@
 }
 
 @media (max-width: 360px) {
+    .layout_navbar_right img {
+        height: auto;
+        max-height: var(--layout-nav-logo-height_middle);
+    }
+}
+
+
+@media (max-width: 300px) {
     .layout_navbar_right img {
         height: auto;
         max-height: var(--layout-nav-logo-height_small);
