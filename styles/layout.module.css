@@ -143,8 +143,8 @@
 
 
 
-.layout_navbar_right a {
-    color: blue;
+.layout_navbar_right img {
+    height: var(--layout-nav-height);
 }
 
 

@@ -42,7 +42,11 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
 
                     <div className="layout_navbar_right">
                         <div>
-                            <a href="/">Alexander's Art</a>
+                            <a href="/">
+
+                                <img src="/Schrift_quer.png" />
+
+                            </a>
                         </div>
                     </div>
                 </div>
