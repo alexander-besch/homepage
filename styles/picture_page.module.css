@@ -3,13 +3,16 @@
     flex-direction: column;
     align-items: center;
     --photo-page-margin: 20px;
+
     margin-bottom: var(--photo-page-margin);
     margin-top: var(--photo-page-margin);
+
 }
 
 .picture_page img {
     max-width: var(--layout-content-width);
     max-height: calc(var(--layout-content-height) + var(--layout-footer-height) - 2 * var(--photo-page-margin));
+
     width: auto;
     height: 100%;
 }

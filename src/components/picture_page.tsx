@@ -13,8 +13,10 @@ export default function PicturePage(props: PicturePageProps): React.ReactNode {
     return <Layout
         title="Alexander's Picture"
     >
-        <div className="photo_page">
+
+        <div className="picture_page">
             <Image inputPath={props.assets[props.idx]!.cachePath} lazy={false} />
+
         </div>
 
     </Layout>
