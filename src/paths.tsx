@@ -47,3 +47,9 @@ export function getImmichCachePath(name: string): string {
     ensureDirExists(cachePath);
     return path.join(cachePath, name);
 }
+
+// asssets //
+export const loadPicturePath = `/picture`;
+export function getAssetRoute(id: string): string {
+    return path.join(loadPicturePath, id);
+}

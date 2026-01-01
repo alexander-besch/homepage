@@ -3,11 +3,14 @@ import { renderToPipeableStream } from "react-dom/server";
 
 import IndexPage from "./components/index_page.js";
 import GalleryPage from "./components/gallery_page.js";
+import PicturePage from "./components/picture_page.js";
 import AboutPage from "./components/about_page.js";
 import { transform } from "lightningcss";
 import path from "path";
 import { ensureDirExists } from "./paths.js";
-import { prepareImmichPortfolio } from "./assets.js";
+import { prepareImmichPortfolio, type Asset } from "./assets.js";
+import { getAssetRoute } from "./paths.js";
+
 
 async function buildStyles() {
     // list of css-Files
@@ -17,6 +20,7 @@ async function buildStyles() {
         "./styles/fonts.css",
         "./styles/index_page.module.css",
         "./styles/gallery_page.module.css",
+        "./styles/picture_page.module.css",
         "./styles/about_page.module.css",
     ];
     const destPath = "./deploy/styles.css";
@@ -88,5 +92,16 @@ buildRouteInBG("/about", <AboutPage parameter_01="About Page" />);
 
 copyDir("./static", "./deploy").catch(e => { throw e; });
 
+// create one html-page for each picture
+async function buildPicture(portfolio: Asset[]) {
+    console.log("Building picture");
+    for (const [idx, asset] of portfolio.entries()) {
+        const route = getAssetRoute(asset.id);
+        buildRouteInBG(route, <PicturePage route={route} idx={idx} assets={portfolio} />);
+    }
+
+}
+
 const portfolio = await prepareImmichPortfolio();
 console.log(portfolio);
+buildPicture(portfolio).catch(e => { throw e; });
