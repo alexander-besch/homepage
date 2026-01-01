@@ -38,3 +38,13 @@
     font-style: normal;
     font-display: swap;
 }
+
+
+
+@font-face {
+    font-family: MyScriptAlexander2;
+    src: url("/styles/fonts/MyScriptAlexander2.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

@@ -31,7 +31,7 @@
 
 
 .layout_navbar {
-    font-family: "MyScriptAlexander";
+    font-family: "MyScriptAlexander2";
     display: flex;
     flex-direction: row;
     gap: var(--layout-nav-padding-right);
@@ -49,8 +49,8 @@
     border-radius: 3px;
 }
 
-.layout_navbar a:hover {
-    background: lightgrey;
+.layout_navbar_left a:hover {
+    background: grey;
 }
 
 
@@ -106,6 +106,9 @@
     background-color: white;
     opacity: 90%;
     box-shadow: 4px 5px 15px rgba(0, 0, 0, 0.3);
+    font-family: "MyScriptAlexander2";
+    color: black;
+    line-height: 18px;
 }
 
 .layout_navbar_burgeritems li {
@@ -113,6 +116,21 @@
     font-size: 1.5rem;
     font-weight: 500;
 }
+
+.layout_navbar_burgeritems a,
+.layout_navbar_burgeritems a:visited,
+.layout_navbar_burgeritems a:active,
+.layout_navbar_burgeritems a:focus {
+    text-decoration: none;
+    color: black;
+    font-family: "MyScriptAlexander2";
+    padding: 5px;
+}
+
+.layout_navbar_burgeritems a:hover {
+    background: lightgrey;
+}
+
 
 
 
