@@ -24,7 +24,7 @@ import * as fs from "fs";
 import * as crypto from "crypto";
 import type React from "react";
 import path from "path";
-import { ensureDirExists } from "./build.js";
+import { ensureDirExists } from "./paths.js";
 
 const deployPath = `./deploy`;
 
