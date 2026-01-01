@@ -9,6 +9,7 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
             <meta name="viewport" content="width=device-width,initial-scale=1" />
             <link rel="stylesheet" type="text/css" href="/styles.css" />
             <link rel="icon" type="image/png" sizes="256x256" href="/favicon.png" />
+            <script defer src="https://analytics.chris-besch.com/script.js" data-website-id="c995e657-c82d-4edc-bf87-618d2d3e667f"></script>
         </head>
 
         <body>
