@@ -31,6 +31,7 @@ export interface UnembeddedAsset {
     cachePath: string,
     tags: string[],
     rating: number,
+    description: string,
 };
 
 // Download from Immich or if cached load JSON.
@@ -58,7 +59,7 @@ export async function loadImmichPortfolioWithoutEmbedding(): Promise<UnembeddedA
     const rawTags = await getAllTags({});
     const tagToId = new Map<string, string>(rawTags.map(t => [t.name, t.id]));
     if (!tagToId.has(PORTFOLIO_TAG)) {
-        throw new Error(`Didn't fine ${PORTFOLIO_TAG} tag.`);
+        throw new Error(`Didn't find ${PORTFOLIO_TAG} tag.`);
     }
 
     // Get assets.
@@ -99,11 +100,16 @@ export async function loadImmichPortfolioWithoutEmbedding(): Promise<UnembeddedA
         if (asset.tags == undefined) {
             throw new Error(`${asset.originalFileName} doesn't have tags.`);
         }
+        let description = "";
+        if (asset.exifInfo.description != null && asset.exifInfo.description != undefined) {
+            description = asset.exifInfo.description;
+        }
         return {
             id: asset.id,
             cachePath: cachePath,
-            tags: asset.tags.map(t => t.name).filter(n => n != PORTFOLIO_TAG).concat(["photography"]),
-            rating: asset.exifInfo.rating
+            tags: asset.tags.map(t => t.name).filter(n => n != PORTFOLIO_TAG),
+            rating: asset.exifInfo.rating,
+            description: description,
         };
     });
     const jsonPortfolio = JSON.stringify(portfolio, null, 4);
