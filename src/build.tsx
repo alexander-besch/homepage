@@ -6,6 +6,8 @@ import GalleryPage from "./components/gallery_page.js";
 import AboutPage from "./components/about_page.js";
 import { transform } from "lightningcss";
 import path from "path";
+import { ensureDirExists } from "./paths.js";
+import { prepareImmichPortfolio } from "./assets.js";
 
 async function buildStyles() {
     // list of css-Files
@@ -75,12 +77,6 @@ function buildRouteInBG(route: string, element: React.ReactNode) {
     buildLoadPathHTMLInBG(`./deploy/${route}/index.html`, element);
 }
 
-export function ensureDirExists(dir: string): void {
-    if (!fs.existsSync(dir)) {
-        fs.mkdirSync(dir, { recursive: true });
-    }
-}
-
 ensureDirExists("./deploy");
 buildStyles().catch(e => { throw e; });
 //buildRouteInBG("/", <IndexPage parameter_01="Testparameter" />);
@@ -91,3 +87,6 @@ buildRouteInBG("/gallery", <GalleryPage />);
 buildRouteInBG("/about", <AboutPage parameter_01="About Page" />);
 
 copyDir("./static", "./deploy").catch(e => { throw e; });
+
+const portfolio = await prepareImmichPortfolio();
+console.log(portfolio);
