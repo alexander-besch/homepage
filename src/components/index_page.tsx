@@ -1,5 +1,6 @@
 import Layout from "./layout.js";
 
+
 //interface IndexPageProps {
 //    parameter_01: string,
 //}
@@ -9,6 +10,19 @@ export default function IndexPage(): React.ReactNode {
 
         <div className="index_page">
 
+            <div className="index_page_hero">
+                <div className="index_page_hero_text">
+                    <div>
+                        Welcome to my Art<br />
+                        <br />
+                        Feel free to explore
+                    </div>
+
+                    <div>
+                        (and to get lost)
+                    </div>
+                </div>
+            </div>
 
             <h1>Header</h1>
             {/* <h2>Headline {props.parameter_01}</h2> */}

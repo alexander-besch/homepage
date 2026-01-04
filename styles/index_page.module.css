@@ -11,7 +11,41 @@
     line-height: 27px;
 }
 
+.index_page_hero {
+    height: calc(100vh - var(--layout-nav-height));
+    background-image: url("/hero3.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
 
-.index_page {
-    padding: 10px;
+
+.index_page_hero_text {
+    position: absolute;
+    inset: 0;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: center;
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 4rem);
+
+
+    color: white;
+    font-family: "MyScriptAlexander2";
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    /*text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+*/
+    top: 2rem;
+    bottom: 3rem;
 }
