@@ -27,6 +27,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 500;
 }
 
 
@@ -41,7 +42,6 @@
     padding-left: var(--layout-nav-padding-left);
     padding-right: var(--layout-nav-padding-right);
     background-color: lightgray;
-    z-index: 500;
 }
 
 .layout_navbar a {
