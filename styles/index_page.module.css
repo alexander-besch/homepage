@@ -34,7 +34,7 @@
 
     align-items: center;
     text-align: center;
-    font-size: clamp(1.5rem, 5vw, 4rem);
+    font-size: clamp(2rem, 5vw, 4rem);
 
 
     color: white;
@@ -48,4 +48,6 @@
 */
     top: 2rem;
     bottom: 3rem;
+    padding-left: var(--layout-content-padding);
+    padding-right: var(--layout-content-padding);
 }

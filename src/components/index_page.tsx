@@ -19,7 +19,8 @@ export default function IndexPage(): React.ReactNode {
                     </div>
 
                     <div>
-                        (and to get lost)
+                        (and to get lost)<br />
+                        <br />
                     </div>
                 </div>
             </div>
