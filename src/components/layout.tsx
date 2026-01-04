@@ -71,5 +71,3 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
         </body>
     </html>;
 }
-
-

@@ -16,7 +16,7 @@ async function buildStyles() {
     // list of css-Files
     const sourcePaths = [
         "./styles/reset.css",
-        "./styles/layout.module.css",
+        "./styles/layout_module.css",
         "./styles/fonts.css",
         "./styles/index_page.module.css",
         "./styles/gallery_page.module.css",
