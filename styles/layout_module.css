@@ -41,6 +41,7 @@
     padding-left: var(--layout-nav-padding-left);
     padding-right: var(--layout-nav-padding-right);
     background-color: lightgray;
+    z-index: 500;
 }
 
 .layout_navbar a {
