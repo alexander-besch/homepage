@@ -19,6 +19,7 @@ export default function AboutPage(): React.ReactNode {
             <h1>Contact</h1>
 
             <p>
+                <br />
                 Instagram: <br />
                 E-Mail: <br />
 
@@ -28,6 +29,7 @@ export default function AboutPage(): React.ReactNode {
             <h1>About</h1>
 
             <p>
+                <br />
                 When people ask me how long I have been painting or drawing, my answer is: always.
                 Like all of us, I drew as a child — and I simply never stopped.<br />
                 <br />

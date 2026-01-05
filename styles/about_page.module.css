@@ -33,5 +33,11 @@
     font-family: "MyScriptAlexander2";
     text-align: center;
     font-size: clamp(2rem, 5vw, 4rem);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
+.about_page p {
+    font-size: 18px;
+    line-height: 27px;
 }
