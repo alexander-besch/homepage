@@ -41,7 +41,7 @@ export default function AboutPage(): React.ReactNode {
                     <Image inputPath="./resources/IMG_4605.JPG" lazy={false} transparent />
                 </a>
                 <figcaption className="about_page_image_card_caption">
-                    Early pencil drawing at the age of 17
+                    Early pencil drawing, age 17
                 </figcaption>
             </div>
 
