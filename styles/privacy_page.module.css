@@ -1,0 +1,47 @@
+.privacy_page h1 {
+    color: black;
+    font-family: "MyScriptAlexander2";
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 4rem);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.privacy_page h2 {
+    color: black;
+    font-family: "MyScriptAlexander2";
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.privacy_page p {
+    font-size: 18px;
+    line-height: 27px;
+
+}
+
+.privacy_page li {
+    font-size: 18px;
+    line-height: 27px;
+    margin-left: 15px;
+
+}
+
+.privacy_page_text {
+    text-align: justify;
+    padding-top: 30px;
+}
+
+.privacy_page_text a {
+    color: blue;
+}
+
+.privacy_page_text a:focus {
+    text-decoration: none;
+}
+
+.privacy_page_text a:hover {
+    background: lightgrey;
+}

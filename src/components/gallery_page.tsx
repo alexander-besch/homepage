@@ -4,7 +4,7 @@ import Layout from "./layout.js";
 
 export default function GalleryPage(): React.ReactNode {
     return <Layout title="Alexander's Homepage">
-        <h1>---Gallery---</h1>
+        <h1>---Baustelle---</h1>
 
 
         <br />

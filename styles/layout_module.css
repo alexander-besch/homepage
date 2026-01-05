@@ -205,7 +205,17 @@
 
 .layout_footer {
     background-color: lightgrey;
-    color: black;
     font-family: "LiberationSans";
+    font-size: 16;
+    text-align: center;
+    padding: 3px;
+}
 
+.layout_footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.layout_footer a:hover {
+    background: grey;
 }

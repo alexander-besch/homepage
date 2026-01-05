@@ -5,6 +5,7 @@ import IndexPage from "./components/index_page.js";
 import GalleryPage from "./components/gallery_page.js";
 import PicturePage from "./components/picture_page.js";
 import AboutPage from "./components/about_page.js";
+import PrivacyPage from "./components/privacy_page.js";
 import { transform } from "lightningcss";
 import path from "path";
 import { ensureDirExists } from "./paths.js";
@@ -22,6 +23,7 @@ async function buildStyles() {
         "./styles/gallery_page.module.css",
         "./styles/picture_page.module.css",
         "./styles/about_page.module.css",
+        "./styles/privacy_page.module.css",
     ];
     const destPath = "./deploy/styles.css";
     const sources = await Promise.all(sourcePaths.map(s => fs.promises.readFile(s)));
@@ -91,6 +93,8 @@ buildRouteInBG("/gallery", <GalleryPage />);
 //buildRouteInBG("/about", <AboutPage parameter_01="About Page" />);
 
 buildRouteInBG("/about", <AboutPage />);
+
+buildRouteInBG("/privacy", <PrivacyPage />);
 
 copyDir("./static", "./deploy").catch(e => { throw e; });
 

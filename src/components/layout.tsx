@@ -66,7 +66,7 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
 
 
             <div className="layout_footer">
-                Text unten
+                <a href="/privacy">Privacy</a>
             </div>
         </body>
     </html>;

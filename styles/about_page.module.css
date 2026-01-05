@@ -40,20 +40,67 @@
 .about_page p {
     font-size: 18px;
     line-height: 27px;
-}
 
-.about_page a {
-    color: blue;
-}
-
-.about_page a:focus {
-    text-decoration: none;
-}
-
-.about_page a:hover {
-    background: lightgrey;
 }
 
 .about_page_contact {
+    text-align: center;
+}
+
+.about_page_contact a {
+    text-align: center;
+    color: blue;
+}
+
+.about_page_contact a:focus {
+    text-decoration: none;
+}
+
+.about_page_contact a:hover {
+    background: lightgrey;
+}
+
+
+.about_page_text {
+    text-align: justify;
+    padding-top: 30px;
+}
+
+
+.about_page_text a:focus {
+    text-decoration: none;
+}
+
+.about_page_text a:hover {
+    background: lightgrey;
+}
+
+
+/*.about_page_image_card {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}*/
+
+.about_page_image_card img {
+    /*border-width: px;
+    border-color: black;
+    border-style: solid;*/
+    margin: 0.8rem auto;
+    display: block;
+    object-fit: contain;
+    max-width: var(--layout-content-width);
+    height: 300px;
+    /*
+    border: 1px solid #000;
+    padding: 2px;
+    box-sizing: border-box;*/
+}
+
+.about_page_image_card_caption {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: black;
+    font-style: italic;
     text-align: center;
 }
