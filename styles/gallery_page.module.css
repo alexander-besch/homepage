@@ -3,7 +3,7 @@
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
-     gap: 20px;
+     gap: 10px;
      margin-top: 20px;
      margin-bottom: 20px;
 
@@ -17,8 +17,14 @@
 
  .gallery_page_image_card img {
      width: 100%;
-     height: 200px;
+     height: 300px;
      /*padding: 10px;*/
      object-fit: contain;
      max-width: var(--layout-content-width);
+ }
+
+ @media (max-width: 360px) {
+     .gallery_page_image_card img {
+         height: 200px;
+     }
  }
