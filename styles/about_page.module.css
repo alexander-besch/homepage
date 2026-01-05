@@ -13,7 +13,7 @@
 .about_page_hero_text {
     position: absolute;
     left: 50%;
-    bottom: 2rem;
+    bottom: 3rem;
     transform: translateX(-50%);
 
     text-align: center;
