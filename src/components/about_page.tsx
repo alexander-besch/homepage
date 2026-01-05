@@ -16,6 +16,14 @@ export default function AboutPage(): React.ReactNode {
                 </div>
             </div>
 
+            <h1>Contact</h1>
+
+            <p>
+                Instagram: <br />
+                E-Mail: <br />
+
+
+            </p>
 
             <h1>About</h1>
 

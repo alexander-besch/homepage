@@ -1,6 +1,6 @@
 .about_page_hero {
     height: calc(100vh - var(--layout-nav-height));
-    background-image: url("/profilbild.jpg");
+    background-image: url("/profilbild.JPG");
     background-size: cover;
     background-position: center;
     position: relative;
