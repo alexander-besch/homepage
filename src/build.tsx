@@ -88,7 +88,9 @@ buildRouteInBG("/", <IndexPage />);
 
 buildRouteInBG("/gallery", <GalleryPage />);
 
-buildRouteInBG("/about", <AboutPage parameter_01="About Page" />);
+//buildRouteInBG("/about", <AboutPage parameter_01="About Page" />);
+
+buildRouteInBG("/about", <AboutPage />);
 
 copyDir("./static", "./deploy").catch(e => { throw e; });
 
