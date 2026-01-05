@@ -16,20 +16,18 @@ export default function AboutPage(): React.ReactNode {
                 </div>
             </div>
 
-            <h1>Contact</h1>
-
-            <p>
-                <br />
-                Instagram: <br />
-                E-Mail: <br />
-
-
-            </p>
+            <div className="about_page_contact">
+                <h1>Contact</h1>
+                <p>
+                    Instagram: <a href="https://www.instagram.com/a_wie_alexander">@a_wie_alexander</a> <br />
+                    E-Mail: <a href="mailto:mail@alexander-besch.com">mail@alexander-besch.com</a> <br />
+                    <br />
+                </p>
+            </div>
 
             <h1>About</h1>
 
             <p>
-                <br />
                 When people ask me how long I have been painting or drawing, my answer is: always.
                 Like all of us, I drew as a child — and I simply never stopped.<br />
                 <br />

@@ -34,10 +34,26 @@
     text-align: center;
     font-size: clamp(2rem, 5vw, 4rem);
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .about_page p {
     font-size: 18px;
     line-height: 27px;
+}
+
+.about_page a {
+    color: blue;
+}
+
+.about_page a:focus {
+    text-decoration: none;
+}
+
+.about_page a:hover {
+    background: lightgrey;
+}
+
+.about_page_contact {
+    text-align: center;
 }
