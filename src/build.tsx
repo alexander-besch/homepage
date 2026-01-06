@@ -21,6 +21,7 @@ async function buildStyles() {
         "./styles/fonts.css",
         "./styles/index_page.module.css",
         "./styles/gallery_page.module.css",
+        "./styles/picture_list.module.css",
         "./styles/picture_page.module.css",
         "./styles/about_page.module.css",
         "./styles/privacy_page.module.css",
@@ -83,21 +84,6 @@ function buildRouteInBG(route: string, element: React.ReactNode) {
     buildLoadPathHTMLInBG(`./deploy/${route}/index.html`, element);
 }
 
-ensureDirExists("./deploy");
-buildStyles().catch(e => { throw e; });
-//buildRouteInBG("/", <IndexPage parameter_01="Testparameter" />);
-buildRouteInBG("/", <IndexPage />);
-
-buildRouteInBG("/gallery", <GalleryPage />);
-
-//buildRouteInBG("/about", <AboutPage parameter_01="About Page" />);
-
-buildRouteInBG("/about", <AboutPage />);
-
-buildRouteInBG("/privacy", <PrivacyPage />);
-
-copyDir("./static", "./deploy").catch(e => { throw e; });
-
 // create one html-page for each picture
 async function buildPicture(portfolio: Asset[]) {
     console.log("Building picture");
@@ -111,3 +97,21 @@ async function buildPicture(portfolio: Asset[]) {
 const portfolio = await prepareImmichPortfolio();
 // console.log(portfolio);
 buildPicture(portfolio).catch(e => { throw e; });
+
+ensureDirExists("./deploy");
+buildStyles().catch(e => { throw e; });
+//buildRouteInBG("/", <IndexPage parameter_01="Testparameter" />);
+buildRouteInBG("/", <IndexPage route="/" portfolio={portfolio} />);
+
+buildRouteInBG("/gallery", <GalleryPage />);
+
+//buildRouteInBG("/about", <AboutPage parameter_01="About Page" />);
+
+buildRouteInBG("/about", <AboutPage />);
+
+buildRouteInBG("/privacy", <PrivacyPage />);
+
+copyDir("./static", "./deploy").catch(e => { throw e; });
+
+
+

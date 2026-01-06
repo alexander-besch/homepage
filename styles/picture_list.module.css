@@ -1,0 +1,29 @@
+ .picture_list {
+
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     gap: 10px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+
+ }
+
+ .picture_list_card {
+     flex-grow: 1;
+     flex-shrink: 0;
+     flex-basis: auto;
+ }
+
+ .picture_list_card img {
+     width: 100%;
+     height: 300px;
+     object-fit: contain;
+     max-width: var(--layout-content-width);
+ }
+
+ @media (max-width: 360px) {
+     .picture_list_card img {
+         height: 200px;
+     }
+ }

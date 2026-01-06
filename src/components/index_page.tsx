@@ -1,11 +1,17 @@
 import Layout from "./layout.js";
+import type { Asset } from "../assets.js";
+import PictureList from "./picture_list.js";
 
+interface IndexPageProps {
+    route: string,
+    portfolio: Asset[],
+}
 
-//interface IndexPageProps {
-//    parameter_01: string,
-//}
-//export default function IndexPage(props: IndexPageProps): React.ReactNode {
-export default function IndexPage(): React.ReactNode {
+export default function IndexPage(props: IndexPageProps): React.ReactNode {
+
+    //show the best x (in slice(0,x)) pictures on index-page
+    const portfolioToShow = props.portfolio.sort((a, b) => b.rating - a.rating).slice(0, 5);
+
     return <Layout title="Alexander's Art">
 
         <div className="index_page">
@@ -33,7 +39,7 @@ export default function IndexPage(): React.ReactNode {
                 <br />
 
             </p>
-
+            <PictureList assets={portfolioToShow} />
 
         </div>
 
