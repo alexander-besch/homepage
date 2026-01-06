@@ -95,7 +95,9 @@ async function buildPicture(portfolio: Asset[]) {
 }
 
 const portfolio = await prepareImmichPortfolio();
-// console.log(portfolio);
+//
+//console.log(portfolio);
+//
 buildPicture(portfolio).catch(e => { throw e; });
 
 ensureDirExists("./deploy");

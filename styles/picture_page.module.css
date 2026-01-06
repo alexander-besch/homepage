@@ -16,3 +16,7 @@
     width: auto;
     height: 100%;
 }
+
+.picture_page_wrapper {
+    padding-top: 0.1px;
+}

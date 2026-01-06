@@ -32,6 +32,7 @@ export interface UnembeddedAsset {
     tags: string[],
     rating: number,
     description: string,
+    date: string,
 };
 
 // Download from Immich or if cached load JSON.
@@ -104,12 +105,17 @@ export async function loadImmichPortfolioWithoutEmbedding(): Promise<UnembeddedA
         if (asset.exifInfo.description != null && asset.exifInfo.description != undefined) {
             description = asset.exifInfo.description;
         }
+        let date = "";
+        if (asset.exifInfo.dateTimeOriginal != null && asset.exifInfo.dateTimeOriginal != undefined) {
+            date = asset.exifInfo.dateTimeOriginal;
+        }
         return {
             id: asset.id,
             cachePath: cachePath,
             tags: asset.tags.map(t => t.name).filter(n => n != PORTFOLIO_TAG),
             rating: asset.exifInfo.rating,
             description: description,
+            date: date,
         };
     });
     const jsonPortfolio = JSON.stringify(portfolio, null, 4);

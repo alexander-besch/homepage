@@ -181,6 +181,12 @@
     border-radius: 10px;
 }
 
+.layout_navbar_right a {
+    text-decoration: none;
+    padding: 0px 0px;
+}
+
+
 @media (max-width: 360px) {
     .layout_navbar_right img {
         height: auto;
