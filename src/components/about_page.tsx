@@ -56,6 +56,7 @@ export default function AboutPage(): React.ReactNode {
                     To me, art is not a hobby. I have no better word - "passion" sounds too pathetic.
                     I simply know that I could not think of a life without it.
                     <br />
+                    <br />
                     I enjoy working on commissions. They make me considering motifs (and sometimes genres)
                     that would otherwise never come to my mind.
                     <br />

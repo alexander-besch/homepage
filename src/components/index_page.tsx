@@ -10,7 +10,7 @@ interface IndexPageProps {
 export default function IndexPage(props: IndexPageProps): React.ReactNode {
 
     //show the best x (in slice(0,x)) pictures on index-page
-    const portfolioToShow = props.portfolio.sort((a, b) => b.rating - a.rating).slice(0, 5);
+    const portfolioToShow = props.portfolio.sort((a, b) => b.rating - a.rating).slice(0, 12);
 
     return <Layout title="Alexander's Art">
 
@@ -31,15 +31,18 @@ export default function IndexPage(props: IndexPageProps): React.ReactNode {
                 </div>
             </div>
 
-            <h1>nulla dies sine linea</h1>
+            <div className="index_page_quote">- nulla dies sine linea -</div>
+
             {/* <h2>Headline {props.parameter_01}</h2> */}
+
+
+            <PictureList assets={portfolioToShow} />
 
             <p>
                 --- Baustelle ---
                 <br />
 
             </p>
-            <PictureList assets={portfolioToShow} />
 
         </div>
 
