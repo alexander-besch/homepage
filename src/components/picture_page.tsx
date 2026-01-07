@@ -2,12 +2,15 @@ import Layout from "./layout.js";
 import Image from "./image.js";
 import type { Asset } from "../assets.js";
 import { getTagRoute } from "../paths.js";
+import { getNearestListedNeighbours } from "../embedding.js";
+import PictureList from "./picture_list.js";
 
 
 function getTagsByPrefix(tags: string[], prefix: string) {
     return tags
         .filter(tag => tag.startsWith(prefix + ":"))
-        .map(tag => tag.split(":").slice(1).join(":"));
+        .map(tag => tag.split(":").slice(1).join(":"))
+        .sort();
 }
 
 function getYearFromDate(date: string): number {
@@ -28,6 +31,9 @@ function getSizeTag(tags: string[]): string | null {
         .replace("cm", " cm");
 }
 
+const nearestNeighbours = 6;
+const antiNeighbours = 0;
+
 interface PicturePageProps {
     route: string,
     idx: number,
@@ -45,6 +51,7 @@ export default function PicturePage(props: PicturePageProps): React.ReactNode {
         [asset.description, year].filter(Boolean).join(", "),
         size
     ].filter(Boolean);
+    const similarAssets = getNearestListedNeighbours(props.idx, nearestNeighbours, antiNeighbours, props.assets);
     //console.log(genreTags);
 
     return <Layout title="Alexander's Picture">
@@ -96,6 +103,11 @@ export default function PicturePage(props: PicturePageProps): React.ReactNode {
                 ))}
             </div>
             <br />
+            <hr />
+            <div className="picture_page">
+                <h1>Similar works:</h1>
+            </div>
+            <PictureList assets={similarAssets} />
         </div>
     </Layout>
 

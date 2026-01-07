@@ -9,6 +9,15 @@
 
 }
 
+.picture_page h1 {
+    color: black;
+    font-family: "MyScriptAlexander2";
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 4rem);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .picture_page img {
     max-width: var(--layout-content-width);
     max-height: calc(var(--layout-content-height) + var(--layout-footer-height) - 3 * var(--photo-page-margin));

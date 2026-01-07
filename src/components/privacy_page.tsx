@@ -45,21 +45,23 @@ export default function PrivacyPage(): React.ReactNode {
 
                     This data is used to help me understand what topics people
                     are interested in and keep my motivation up.<br />
-
+                    <br />
                 </p>
                 <h2>
                     Privacy policies of other websites
                 </h2>
                 <p>
                     My website contains links to other websites. This privacy policy applies only to my website.
-                    So if you click on a link to another website, you should read their privacy policy.
+                    So if you click on a link to another website, you should read their privacy policy.<br />
+                    <br />
                 </p>
                 <h2>
                     Changes to my privacy policy
                 </h2>
                 <p>
                     I keep my privacy policy under regular review and place any updates on this web page.
-                    This privacy policy was last updated on 6th Januar 2026.
+                    This privacy policy was last updated on 6th Januar 2026.<br />
+                    <br />
                 </p>
                 <h2>
                     How to contact me

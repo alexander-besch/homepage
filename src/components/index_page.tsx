@@ -32,7 +32,7 @@ export default function IndexPage(props: IndexPageProps): React.ReactNode {
             </div>
 
             <div className="index_page_quote">- nulla dies sine linea -</div>
-
+            <hr />
             {/* <h2>Headline {props.parameter_01}</h2> */}
 
 
