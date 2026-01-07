@@ -1,7 +1,6 @@
 import Layout from "./layout.js";
 import Image from "./image.js";
 import type { Asset } from "../assets.js";
-import Description from "./description.js";
 import { getTagRoute } from "../paths.js";
 
 
@@ -11,6 +10,23 @@ function getTagsByPrefix(tags: string[], prefix: string) {
         .map(tag => tag.split(":").slice(1).join(":"));
 }
 
+function getYearFromDate(date: string): number {
+    return new Date(date).getFullYear();
+}
+
+function getSizeTag(tags: string[]): string | null {
+    const sizeTag = tags.find(tag => tag.startsWith("size:"));
+
+    if (typeof sizeTag === "undefined") return null;  // <-- TypeScript ist happy
+
+    // sizeTag existiert hier garantiert
+    const sizePart = sizeTag.split(":")[1];
+    if (!sizePart) return null;  // sicherstellen, dass nach ':' auch was kommt
+
+    return sizePart
+        .replace("x", " x ")
+        .replace("cm", " cm");
+}
 
 interface PicturePageProps {
     route: string,
@@ -23,15 +39,23 @@ export default function PicturePage(props: PicturePageProps): React.ReactNode {
     const mediumTags = getTagsByPrefix(asset.tags, "medium");
     const genreTags = getTagsByPrefix(asset.tags, "genre");
     const motifTags = getTagsByPrefix(asset.tags, "motif");
+    const year = asset.date ? getYearFromDate(asset.date) : null;
+    const size = getSizeTag(asset.tags);
+    const descriptionLines = [
+        [asset.description, year].filter(Boolean).join(", "),
+        size
+    ].filter(Boolean);
     //console.log(genreTags);
 
     return <Layout title="Alexander's Picture">
         <div className="picture_page_wrapper">
             <div className="picture_page">
                 <Image inputPath={asset.cachePath} lazy={false} />
-                {asset.description && (
-                    <div className="description">
-                        <Description description={asset.description} />
+                {descriptionLines.length > 0 && (
+                    <div className="picture_page_description">
+                        {descriptionLines.map((line, idx) => (
+                            <div key={idx}>{line}</div>
+                        ))}
                     </div>
                 )}
             </div>

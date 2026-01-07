@@ -32,7 +32,7 @@ export default function TagPage(props: TagPageProps): React.ReactNode {
     return <Layout title={formatTagForTitle(props.tag)}>
         <div className="tag_page">
             <h1>{formatTagForTitle(props.tag)}</h1>
-
+            <hr />
             <PictureList assets={portfolioToShow} />
 
         </div>

@@ -37,13 +37,16 @@ export default function IndexPage(props: IndexPageProps): React.ReactNode {
 
 
             <PictureList assets={portfolioToShow} />
-
-            <p>
-                --- Baustelle ---
-                <br />
-
-            </p>
-
+            <hr />
+            <div className="index_page_links">
+                <a href="/recent">Recent works</a>
+            </div>
+            <br />
+            <div className="index_page_links">
+                <a href="/explore">Explore the collection</a>
+            </div>
+            <br />
+            <hr />
         </div>
 
     </Layout >

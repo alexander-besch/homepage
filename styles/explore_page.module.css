@@ -1,0 +1,60 @@
+.explore_page h1 {
+    color: black;
+    font-family: "MyScriptAlexander2";
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 4rem);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.explore_page h2 {
+    color: black;
+    font-family: "MyScriptAlexander2";
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+.explore_page p {
+    font-size: 18px;
+    line-height: 27px;
+
+}
+
+.explore_page a {
+    color: blue;
+    font-family: LiberationSans, sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration: none;
+}
+
+.explore_page a:hover {
+    text-decoration: underline;
+}
+
+.explore_page_tags_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* Don't specify grid-template-rows so that each row has it's own height. */
+    grid-auto-flow: row;
+    gap: 5px;
+    /* columns: 4; */
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .explore_page_tags_list {
+        grid-template-columns: 1fr 1fr 1fr;
+        /* columns: 3; */
+    }
+}
+
+@media (max-width: 600px) {
+    .explore_page_tags_list {
+        grid-template-columns: 1fr 1fr;
+        /* columns: 2; */
+    }
+}

@@ -3,7 +3,7 @@ import Layout from "./layout.js";
 
 
 export default function AboutPage(): React.ReactNode {
-    return <Layout title="Alexander's Homepage">
+    return <Layout title="About me">
 
         <div className="about_page">
 

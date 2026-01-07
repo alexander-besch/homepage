@@ -4,14 +4,14 @@
     align-items: center;
     --photo-page-margin: 20px;
 
-    margin-bottom: var(--photo-page-margin);
+    margin-bottom: calc(2 * var(--photo-page-margin));
     margin-top: var(--photo-page-margin);
 
 }
 
 .picture_page img {
     max-width: var(--layout-content-width);
-    max-height: calc(var(--layout-content-height) + var(--layout-footer-height) - 2 * var(--photo-page-margin));
+    max-height: calc(var(--layout-content-height) + var(--layout-footer-height) - 3 * var(--photo-page-margin));
 
     width: auto;
     height: 100%;
@@ -39,4 +39,15 @@
 
 .picture_page_tag a:hover {
     text-decoration: underline;
+}
+
+.picture_page_description {
+    text-align: center;
+    /* zentriert alle Texte in der Box */
+    display: flex;
+    /* optional, wenn du vertikale Ausrichtung brauchst */
+    flex-direction: column;
+    /* eine Zeile unter der anderen */
+    align-items: center;
+    /* vertikal mittig im Flex-Container */
 }

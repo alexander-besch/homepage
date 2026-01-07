@@ -31,7 +31,10 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
                                 <a href="/">Home</a>
                             </div>
                             <div>
-                                <a href="/gallery">Gallery</a>
+                                <a href="/recent">Recent</a>
+                            </div>
+                            <div>
+                                <a href="/explore">Explore</a>
                             </div>
                             <div>
                                 <a href="/about">About</a>
@@ -55,7 +58,8 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
 
             <div className="layout_navbar_burgeritems">
                 <li><a href="/">Home</a></li>
-                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/recent">Recent</a></li>
+                <li><a href="/explore">Explore</a></li>
                 <li><a href="/about">About</a></li>
             </div>
 
@@ -66,7 +70,7 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
 
 
             <div className="layout_footer">
-                <a href="/privacy">Privacy</a>
+                <a href="/privacy">Privacy</a> | © 2026 | All rights reserved
             </div>
         </body>
     </html>;

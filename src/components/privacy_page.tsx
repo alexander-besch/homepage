@@ -2,7 +2,7 @@ import Layout from "./layout.js";
 
 
 export default function PrivacyPage(): React.ReactNode {
-    return <Layout title="Alexander's Homepage">
+    return <Layout title="Privacy">
 
         <div className="privacy_page">
 

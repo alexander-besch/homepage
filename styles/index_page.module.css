@@ -62,3 +62,34 @@
     padding-left: var(--layout-content-padding);
     padding-right: var(--layout-content-padding);
 }
+
+.index_page_links {
+
+    text-align: center;
+
+}
+
+.index_page_center {
+    text-align: center;
+}
+
+.index_page_links a {
+
+    color: black;
+    font-family: "MyScriptAlexander2";
+    font-size: clamp(2rem, 5vw, 4rem);
+    text-decoration: none;
+
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 8px 1px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+}
+
+.index_page_links a:hover {
+    background-color: lightgrey;
+}

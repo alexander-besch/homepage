@@ -2,7 +2,8 @@ import * as fs from "fs";
 import { renderToPipeableStream } from "react-dom/server";
 
 import IndexPage from "./components/index_page.js";
-import GalleryPage from "./components/gallery_page.js";
+import RecentPage from "./components/recent_page.js";
+import ExplorePage from "./components/explore_page.js";
 import PicturePage from "./components/picture_page.js";
 import AboutPage from "./components/about_page.js";
 import PrivacyPage from "./components/privacy_page.js";
@@ -21,7 +22,8 @@ async function buildStyles() {
         "./styles/layout_module.css",
         "./styles/fonts.css",
         "./styles/index_page.module.css",
-        "./styles/gallery_page.module.css",
+        "./styles/recent_page.module.css",
+        "./styles/explore_page.module.css",
         "./styles/picture_list.module.css",
         "./styles/picture_page.module.css",
         "./styles/tag_page.module.css",
@@ -127,7 +129,9 @@ buildStyles().catch(e => { throw e; });
 //buildRouteInBG("/", <IndexPage parameter_01="Testparameter" />);
 buildRouteInBG("/", <IndexPage route="/" portfolio={portfolio} />);
 
-buildRouteInBG("/gallery", <GalleryPage />);
+buildRouteInBG("/recent", <RecentPage portfolio={portfolio} />);
+
+buildRouteInBG("/explore", <ExplorePage portfolio={portfolio} />);
 
 //buildRouteInBG("/about", <AboutPage parameter_01="About Page" />);
 
