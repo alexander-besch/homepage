@@ -6,13 +6,15 @@
      gap: 10px;
      margin-top: 20px;
      margin-bottom: 20px;
-
+     /*justify-content: space-between;*/
  }
 
  .picture_list_card {
+     /*flex-grow: 0;*/
      flex-grow: 1;
      flex-shrink: 0;
      flex-basis: auto;
+
  }
 
  .picture_list_card img {

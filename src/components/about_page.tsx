@@ -27,7 +27,7 @@ export default function AboutPage(): React.ReactNode {
             </div>
 
             <div className="about_page_text">
-                <h1>About</h1>
+                <h1>About me</h1>
 
                 <p>
                     When people ask me how long I have been painting or drawing, my answer is: always.
@@ -45,6 +45,7 @@ export default function AboutPage(): React.ReactNode {
                 </figcaption>
             </div>
 
+
             <div className="about_page_text">
                 <p>
                     Towards the end of my school years, I bought my first sketchbook,
@@ -57,12 +58,21 @@ export default function AboutPage(): React.ReactNode {
                     I simply know that I could not think of a life without it.
                     <br />
                     <br />
-                    I enjoy working on commissions. They make me considering motifs (and sometimes genres)
+                    I enjoy working on commissions. They make me consider motifs (and sometimes genres)
                     that would otherwise never come to my mind.
+                    So please feel free to <a href="mailto:mail@alexander-besch.com">contact me</a> anytime if there’s something I could create for you.
                     <br />
                     <br />
                 </p>
             </div>
+
+            <h1>Thanks for visiting my Art!</h1>
+            <div className="about_page_favicon">
+                <img src="/favicon.png" />
+
+            </div>
+
+            <hr />
         </div>
 
     </Layout >

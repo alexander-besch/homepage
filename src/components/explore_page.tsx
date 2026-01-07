@@ -1,5 +1,5 @@
 import type { Asset } from "../assets.js";
-import { getTagRoute } from "../paths.js";
+import { getTagRoute, getYearRoute } from "../paths.js";
 import Layout from "./layout.js";
 
 
@@ -22,17 +22,21 @@ export default function ExplorePage(props: ExplorePageProps): React.ReactNode {
     const mediumTags = getTags(props.portfolio, "medium:");
     const genreTags = getTags(props.portfolio, "genre:");
     const motifTags = getTags(props.portfolio, "motif:");
-
+    const years = Array.from(
+        new Set(
+            props.portfolio.map(asset => new Date(asset.date).getFullYear().toString())
+        )
+    ).sort((a, b) => parseInt(b) - parseInt(a)); // absteigend
     return <Layout title="Explore the collection">
 
         <div className="explore_page">
 
             <div className="explore_page_text">
-                <h1>Explore</h1>
+                <h1>Explore the collection</h1>
                 <hr />
                 <div className="explore_page">
                     <h2>Medium</h2>
-                    <div className="explore_page_tags_list">
+                    <div className="explore_page_list">
                         {mediumTags.map((tag, idx) => (
                             <span key={idx}>
                                 <a href={getTagRoute(`medium:${tag}`)}>
@@ -43,7 +47,7 @@ export default function ExplorePage(props: ExplorePageProps): React.ReactNode {
                     </div>
                     <br />
                     <h2>Genre</h2>
-                    <div className="explore_page_tags_list">
+                    <div className="explore_page_list">
                         {genreTags.map((tag, idx) => (
                             <span key={idx}>
                                 <a href={getTagRoute(`genre:${tag}`)}>
@@ -54,11 +58,22 @@ export default function ExplorePage(props: ExplorePageProps): React.ReactNode {
                     </div>
                     <br />
                     <h2>Motif</h2>
-                    <div className="explore_page_tags_list">
+                    <div className="explore_page_list">
                         {motifTags.map((tag, idx) => (
                             <span key={idx}>
                                 <a href={getTagRoute(`motif:${tag}`)}>
                                     {tag}
+                                </a>
+                            </span>
+                        ))}
+                    </div>
+                    <br />
+                    <h2>Year</h2>
+                    <div className="explore_page_list">
+                        {years.map((year, idx) => (
+                            <span key={idx}>
+                                <a href={getYearRoute(year)}>
+                                    {year}
                                 </a>
                             </span>
                         ))}

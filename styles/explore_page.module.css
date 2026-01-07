@@ -35,7 +35,7 @@
     text-decoration: underline;
 }
 
-.explore_page_tags_list {
+.explore_page_list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /* Don't specify grid-template-rows so that each row has it's own height. */
@@ -46,14 +46,14 @@
 }
 
 @media (max-width: 1200px) {
-    .explore_page_tags_list {
+    .explore_page_list {
         grid-template-columns: 1fr 1fr 1fr;
         /* columns: 3; */
     }
 }
 
 @media (max-width: 600px) {
-    .explore_page_tags_list {
+    .explore_page_list {
         grid-template-columns: 1fr 1fr;
         /* columns: 2; */
     }

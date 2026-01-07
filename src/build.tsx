@@ -14,6 +14,8 @@ import { prepareImmichPortfolio, type Asset } from "./assets.js";
 import { getAssetRoute, getTagRoute } from "./paths.js";
 import { sortTags } from "./tags.js";
 import TagPage from "./components/tag_page.js";
+import YearPage from "./components/year_page.js";
+
 
 async function buildStyles() {
     // list of css-Files
@@ -27,6 +29,7 @@ async function buildStyles() {
         "./styles/picture_list.module.css",
         "./styles/picture_page.module.css",
         "./styles/tag_page.module.css",
+        "./styles/year_page.module.css",
         "./styles/about_page.module.css",
         "./styles/privacy_page.module.css",
     ];
@@ -113,20 +116,34 @@ function buildTags(portfolio: Asset[]) {
     for (const [tag, _n] of tagsList) {
         buildRouteInBG(getTagRoute(tag), <TagPage route={getTagRoute(tag)} tag={tag} portfolio={portfolio} />);
     }
-    // page for all tag
-    //buildRouteInBG(loadTagPath, <TagsPage route={loadTagPath} tags={tagsList} />)
 }
 
+function buildYears(portfolio: Asset[]) {
+    // Alle Jahre aus den Assets extrahieren
+    const allYears = portfolio.map(p => new Date(p.date).getFullYear().toString());
+
+    // Doppelte Jahre entfernen
+    const yearsList = Array.from(new Set(allYears)).sort(); // aufsteigend sortiert
+
+    // Für jedes Jahr eine Seite erstellen
+    for (const year of yearsList) {
+        buildRouteInBG(
+            `/year/${year}`,
+            <YearPage route={`/year/${year}`} year={year} portfolio={portfolio} />
+        );
+    }
+}
 const portfolio = await prepareImmichPortfolio();
 // Show log in console:
 //console.log(portfolio);
 //
 buildPicture(portfolio).catch(e => { throw e; });
 buildTags(portfolio);
+buildYears(portfolio);
 
 ensureDirExists("./deploy");
 buildStyles().catch(e => { throw e; });
-//buildRouteInBG("/", <IndexPage parameter_01="Testparameter" />);
+
 buildRouteInBG("/", <IndexPage route="/" portfolio={portfolio} />);
 
 buildRouteInBG("/recent", <RecentPage portfolio={portfolio} />);

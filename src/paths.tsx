@@ -59,3 +59,8 @@ export function getTagRoute(tag: string): string {
     const [group, value] = tag.split(":");
     return `/tag/${group}/${value}`;
 }
+
+// years //
+export function getYearRoute(year: string): string {
+    return `/year/${year}/`;
+}
