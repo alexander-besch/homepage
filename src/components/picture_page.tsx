@@ -2,6 +2,7 @@ import Layout from "./layout.js";
 import Image from "./image.js";
 import type { Asset } from "../assets.js";
 import Description from "./description.js";
+import { getTagRoute } from "../paths.js";
 
 
 function getTagsByPrefix(tags: string[], prefix: string) {
@@ -39,7 +40,9 @@ export default function PicturePage(props: PicturePageProps): React.ReactNode {
                 <strong>Medium:</strong>{" "}
                 {mediumTags.map((tag, idx) => (
                     <span key={idx}>
-                        {tag}
+                        <a href={getTagRoute(`medium:${tag}`)}>
+                            {tag}
+                        </a>
                         {idx < mediumTags.length - 1 ? ", " : ""}
                     </span>
                 ))}
@@ -49,7 +52,9 @@ export default function PicturePage(props: PicturePageProps): React.ReactNode {
                 <strong>Genre:</strong>{" "}
                 {genreTags.map((tag, idx) => (
                     <span key={idx}>
-                        {tag}
+                        <a href={getTagRoute(`genre:${tag}`)}>
+                            {tag}
+                        </a>
                         {idx < genreTags.length - 1 ? ", " : ""}
                     </span>
                 ))}
@@ -59,7 +64,9 @@ export default function PicturePage(props: PicturePageProps): React.ReactNode {
                 <strong>Motif:</strong>{" "}
                 {motifTags.map((tag, idx) => (
                     <span key={idx}>
-                        {tag}
+                        <a href={getTagRoute(`motif:${tag}`)}>
+                            {tag}
+                        </a>
                         {idx < motifTags.length - 1 ? ", " : ""}
                     </span>
                 ))}
