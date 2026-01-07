@@ -36,7 +36,7 @@ export default function PicturePage(props: PicturePageProps): React.ReactNode {
                 )}
             </div>
 
-            <div>
+            <div className="picture_page_tag">
                 <strong>Medium:</strong>{" "}
                 {mediumTags.map((tag, idx) => (
                     <span key={idx}>
@@ -48,7 +48,7 @@ export default function PicturePage(props: PicturePageProps): React.ReactNode {
                 ))}
             </div>
             <br />
-            <div>
+            <div className="picture_page_tag">
                 <strong>Genre:</strong>{" "}
                 {genreTags.map((tag, idx) => (
                     <span key={idx}>
@@ -60,7 +60,7 @@ export default function PicturePage(props: PicturePageProps): React.ReactNode {
                 ))}
             </div>
             <br />
-            <div>
+            <div className="picture_page_tag">
                 <strong>Motif:</strong>{" "}
                 {motifTags.map((tag, idx) => (
                     <span key={idx}>

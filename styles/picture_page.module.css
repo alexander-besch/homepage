@@ -20,3 +20,23 @@
 .picture_page_wrapper {
     padding-top: 0.1px;
 }
+
+
+.picture_page_tag strong {
+    color: black;
+    font-family: LiberationSans, sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.picture_page_tag a {
+    color: blue;
+    font-family: LiberationSans, sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration: none;
+}
+
+.picture_page_tag a:hover {
+    text-decoration: underline;
+}
