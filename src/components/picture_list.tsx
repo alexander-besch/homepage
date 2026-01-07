@@ -14,7 +14,7 @@ export default function PictureList(props: PictureListProps): React.ReactNode {
         <div className="picture_list">
             {props.assets.map((asset, i) =>
                 <Link key={i} className="picture_list_card" href={getAssetRoute(asset.id)}>
-                    <Image inputPath={asset.cachePath} lazy={true} />
+                    <Image inputPath={asset.cachePath} lazy={true} transparent />
                 </Link>
             )}
         </div>

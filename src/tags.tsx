@@ -19,43 +19,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import * as fs from "fs";
-import path from "path";
-
-export function ensureDirExists(dir: string): void {
-    if (!fs.existsSync(dir)) {
-        fs.mkdirSync(dir, { recursive: true });
+// Return tags sorted by how many times they appear combined with the amount of times they appear.
+export function sortTags(tags: string[]): [string, number][] {
+    let tagsMap = new Map<string, number>();
+    for (const tag of tags) {
+        if (tagsMap.has(tag)) {
+            tagsMap.set(tag, tagsMap.get(tag)! + 1);
+        } else {
+            tagsMap.set(tag, 1);
+        }
     }
-}
-
-
-export const modelPath = `./models`;
-const cachePath = `./cache`;
-export function getImmichPortfolioPath(): string {
-    ensureDirExists(cachePath);
-    return path.join(cachePath, "immich_download.json");
-}
-export function getSentenceEmbeddingCachePath(): string {
-    ensureDirExists(cachePath);
-    return path.join(cachePath, "sentence_embeddings.json");
-}
-export function getImageEmbeddingCachePath(): string {
-    ensureDirExists(cachePath);
-    return path.join(cachePath, "image_embeddings.json");
-}
-export function getImmichCachePath(name: string): string {
-    ensureDirExists(cachePath);
-    return path.join(cachePath, name);
-}
-
-// assets //
-export const loadPicturePath = `/picture`;
-export function getAssetRoute(id: string): string {
-    return path.join(loadPicturePath, id);
-}
-
-// tags //
-export function getTagRoute(tag: string): string {
-    const [group, value] = tag.split(":");
-    return `/tag/${group}/${value}`;
+    return tagsMap.entries().toArray().sort(([_a, a], [_b, b]) => b - a);
 }

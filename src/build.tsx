@@ -10,8 +10,9 @@ import { transform } from "lightningcss";
 import path from "path";
 import { ensureDirExists } from "./paths.js";
 import { prepareImmichPortfolio, type Asset } from "./assets.js";
-import { getAssetRoute } from "./paths.js";
-
+import { getAssetRoute, getTagRoute } from "./paths.js";
+import { sortTags } from "./tags.js";
+import TagPage from "./components/tag_page.js";
 
 async function buildStyles() {
     // list of css-Files
@@ -23,6 +24,7 @@ async function buildStyles() {
         "./styles/gallery_page.module.css",
         "./styles/picture_list.module.css",
         "./styles/picture_page.module.css",
+        "./styles/tag_page.module.css",
         "./styles/about_page.module.css",
         "./styles/privacy_page.module.css",
     ];
@@ -94,11 +96,31 @@ async function buildPicture(portfolio: Asset[]) {
 
 }
 
+function buildTags(portfolio: Asset[]) {
+    // This includes all unlisted elements.
+    const allowedPrefixes = ["genre:", "motif:", "medium:"];
+
+    const allTags = portfolio
+        .flatMap(p => p.tags)
+        .filter(tag =>
+            allowedPrefixes.some(prefix => tag.startsWith(prefix))
+        );
+
+    const tagsList = sortTags(allTags)
+
+    for (const [tag, _n] of tagsList) {
+        buildRouteInBG(getTagRoute(tag), <TagPage route={getTagRoute(tag)} tag={tag} portfolio={portfolio} />);
+    }
+    // page for all tag
+    //buildRouteInBG(loadTagPath, <TagsPage route={loadTagPath} tags={tagsList} />)
+}
+
 const portfolio = await prepareImmichPortfolio();
-//
+// Show log in console:
 //console.log(portfolio);
 //
 buildPicture(portfolio).catch(e => { throw e; });
+buildTags(portfolio);
 
 ensureDirExists("./deploy");
 buildStyles().catch(e => { throw e; });

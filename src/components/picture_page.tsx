@@ -1,9 +1,8 @@
 import Layout from "./layout.js";
 import Image from "./image.js";
 import type { Asset } from "../assets.js";
-//import TagsList from "./tags_list.js";
 import Description from "./description.js";
-//import TagsListGrouped from "./tags_list_grouped.js";
+
 
 function getTagsByPrefix(tags: string[], prefix: string) {
     return tags
@@ -35,11 +34,6 @@ export default function PicturePage(props: PicturePageProps): React.ReactNode {
                     </div>
                 )}
             </div>
-
-            {/* <TagsList tags={asset.tags} />
-            <br />
-            <TagsListGrouped tags={asset.tags} />
-            <br /> */}
 
             <div>
                 <strong>Medium:</strong>{" "}
