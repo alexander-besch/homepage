@@ -24,6 +24,6 @@
 
  @media (max-width: 360px) {
      .picture_list_card img {
-         height: 200px;
+         max-height: 200px;
      }
  }
