@@ -71,7 +71,19 @@ export async function loadImmichPortfolioWithoutEmbedding(): Promise<UnembeddedA
     });
     console.log(`Found ${rawAssets.items.length} assets`);
     // Get full asset info.
-    const assetInfos = await Promise.all(rawAssets.items.map(async a => getAssetInfo({ id: a.id })));
+    //const assetInfos = await Promise.all(rawAssets.items.map(async a => getAssetInfo({ id: a.id })));
+    //const assetInfos = rawAssets.items.map(a => await getAssetInfo({ id: a.id }));
+    const assetInfos = [];
+    const BATCH_SIZE = 5;
+
+    for (let i = 0; i < rawAssets.items.length; i += BATCH_SIZE) {
+        const batch = rawAssets.items.slice(i, i + BATCH_SIZE);
+        const infos = await Promise.all(
+            batch.map(a => getAssetInfo({ id: a.id }))
+        );
+        assetInfos.push(...infos);
+    }
+
 
     // TODO: use zip download
     // Download asset if not cached.
