@@ -62,8 +62,8 @@ export default function ArticlesPage_01(): React.ReactNode {
                     It’s like saying, “Oh, he is playing the guitar,” when he is actually playing the flute.<br />
                     <br />
                     “All right, I understand,” my strict teacher finally agreed.
-                    “But the rest of your About page is still far too long! Still — think about it:
-                    you could write down what you just told me as an article.”<br />
+                    "Still, the rest of your About page is much too long!
+                    But think of it: you could write down what you just told me as an article.”<br />
                     <br />
                     <span className="articles_page_italic">P.S.: Check out his homepage <a href="https:///www.chris-besch.com">here</a> — he is a
                         remarkable photographer.</span>
