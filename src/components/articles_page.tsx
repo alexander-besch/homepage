@@ -8,11 +8,11 @@ export default function ArticlesPage(): React.ReactNode {
 
 
             <div className="articles_page_text">
-                <h1>Articels on Art</h1>
+                <h1>Articles on Art</h1>
             </div>
 
             <div className="articles_page_link">
-                <a href="/articles/01_painting_drawing">Painting and/or Drawing</a>
+                <a href="/articles/01_painting_drawing">Painting and Drawing are not the Same</a>
             </div>
 
 

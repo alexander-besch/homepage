@@ -1,4 +1,4 @@
-.tag_page h1 {
+.year_page h1 {
     color: black;
     font-family: "MyScriptAlexander2";
     text-align: center;
@@ -7,7 +7,7 @@
     padding-bottom: 20px;
 }
 
-.tag_page p {
+.year_page p {
     font-size: 18px;
     line-height: 27px;
 
