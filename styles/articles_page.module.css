@@ -52,12 +52,9 @@
 
 .articles_page_text a {
     color: blue;
-}
-
-.articles_page_text a:focus {
     text-decoration: none;
 }
 
 .articles_page_text a:hover {
-    background: lightgrey;
+    text-decoration: underline;
 }

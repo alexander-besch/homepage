@@ -37,8 +37,8 @@ export default function AboutPage(): React.ReactNode {
             </div>
 
             <div className="about_page_image_card">
-                <a href="/picture/285a1062-62ea-404e-b294-cf22fdb05962">
-                    <Image inputPath="./resources/IMG_4605.JPG" lazy={false} transparent />
+                <a href="/picture/64c0b5a9-848d-40a7-8b44-0880b72c2c5f">
+                    <Image inputPath="./resources/20260108_134537.jpg" lazy={false} transparent />
                 </a>
                 <figcaption className="about_page_image_card_caption">
                     Early pencil drawing, age 17

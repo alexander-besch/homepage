@@ -50,14 +50,11 @@
 .about_page_contact a {
     text-align: center;
     color: blue;
-}
-
-.about_page_contact a:focus {
     text-decoration: none;
 }
 
 .about_page_contact a:hover {
-    background: lightgrey;
+    text-decoration: underline;
 }
 
 
@@ -67,12 +64,13 @@
 }
 
 
-.about_page_text a:focus {
+.about_page_text a {
+    color: blue;
     text-decoration: none;
 }
 
 .about_page_text a:hover {
-    background: lightgrey;
+    text-decoration: underline;
 }
 
 
