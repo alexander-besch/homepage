@@ -141,8 +141,8 @@
 
 
 
-
-@media (max-width: 720px) {
+/* on small screens show burgermenu */
+@media (max-width: 1070px) {
     .layout_navbar_hamburger {
         display: flex;
     }

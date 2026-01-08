@@ -40,9 +40,8 @@ export default function ArticlesPage_01(): React.ReactNode {
                     We don’t notice it because we are so used to it.
                     Our mind translates the line back into the edge of a house when looking at the drawing.
                     That’s why we see a house at all.<br />
-                    I have often wondered whether people with no contact to our civilisation — if such people still exist,
-                    perhaps some tribes in the jungles of the Amazon, or the forests of Bavaria — might not be
-                    able to translate lines back into edges at all, simply because they are not used to seeing drawings.<br />
+                    I have often wondered whether people with no exposure to representational images might not be able to
+                    translate lines back into edges at all, simply because they are not used to seeing drawings.<br />
                     <br />
                     But apart from drawing being a process of transforming what you see into lines, there is another important point.
                     The pen does not run out of ink. At least, not that quickly. (Don’t mention quills and ink wells…)
