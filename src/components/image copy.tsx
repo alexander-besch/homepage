@@ -20,7 +20,7 @@
 // SOFTWARE.
 
 import type React from "react";
-import { convertImageIfNeeded, type ImageSize } from "../convert_image.js";
+import { convertImage, type ImageSize } from "../convert_image.js";
 import type { ExportedImage } from "../convert_image.js";
 
 // 1600 is the max width and height of any image on my homepage.
@@ -59,7 +59,7 @@ function sizesToSrcSet(sizes: ImageSize[]): string {
 // That's because converting the same image with different configs is not allowed.
 // Calling this multiple times is fine because convertImageOnPool caches.
 export async function getDefaultExportedImage(props: ImageProps): Promise<ExportedImage> {
-    return await convertImageIfNeeded({
+    return await convertImage({
         inputPath: props.inputPath,
         widths: defaultWidths,
         lqipWidth: 3,

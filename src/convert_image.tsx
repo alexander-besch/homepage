@@ -268,3 +268,27 @@ export async function convertImage(props: ConvertImageProps): Promise<ExportedIm
         portraitSizes: portraitSizes
     };
 }
+
+// this is a global variable keeping track of which images are already being converted.
+const exportedImagePromises = new Map<string, [ConvertImageProps, Promise<ExportedImage>]>();
+
+// We need to create a wrapper for all these worker functions because node.js only loads code for workers from separate files.
+export async function convertImageIfNeeded(props: ConvertImageProps): Promise<ExportedImage> {
+    // If the image is already being processed, we don't do it again.
+    // Otherwise this could lead to a race condition.
+    // Also, this is saving resources.
+    if (!exportedImagePromises.has(props.inputPath)) {
+        // We don't need to catch this because we're awaiting this in the end of this function.
+        exportedImagePromises.set(props.inputPath, [props, convertImage(props)]);
+    } else {
+        const otherProps = exportedImagePromises.get(props.inputPath)![0];
+        // Only ever create one kind of ConvertImageProps for each file path.
+        // We only use the file path to identify the image.
+        // Theoretically the same image could be exported with different settings.
+        // Allowing that would make it a lot more difficult to prevent a race condition.
+        if (JSON.stringify(otherProps) != JSON.stringify(props)) {
+            throw new Error(`Trying to convert the same image twice with different settings: ${JSON.stringify(otherProps)} ${JSON.stringify(props)}`);
+        }
+    }
+    return await exportedImagePromises.get(props.inputPath)![1];
+}
