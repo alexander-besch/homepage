@@ -37,6 +37,9 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
                                 <a href="/explore">Explore</a>
                             </div>
                             <div>
+                                <a href="/articles">Articles</a>
+                            </div>
+                            <div>
                                 <a href="/about">About</a>
                             </div>
                         </div>
@@ -60,6 +63,7 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
                 <li><a href="/">Home</a></li>
                 <li><a href="/recent">Recent</a></li>
                 <li><a href="/explore">Explore</a></li>
+                <li><a href="/articles">Articles</a></li>
                 <li><a href="/about">About</a></li>
             </div>
 

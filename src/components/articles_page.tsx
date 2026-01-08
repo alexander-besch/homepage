@@ -1,0 +1,26 @@
+import Layout from "./layout.js";
+
+
+export default function ArticlesPage(): React.ReactNode {
+    return <Layout title="Articles">
+
+        <div className="articles_page">
+
+
+            <div className="articles_page_text">
+                <h1>Articels on Art</h1>
+            </div>
+
+            <div className="articles_page_link">
+                <a href="/articles/01_painting_drawing">Painting and/or Drawing</a>
+            </div>
+
+
+            <br />
+            <br />
+
+        </div>
+
+    </Layout >
+
+}

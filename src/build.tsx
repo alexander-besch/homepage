@@ -15,6 +15,8 @@ import { getAssetRoute, getTagRoute } from "./paths.js";
 import { sortTags } from "./tags.js";
 import TagPage from "./components/tag_page.js";
 import YearPage from "./components/year_page.js";
+import ArticlesPage from "./components/articles_page.js";
+import ArticlesPage_01 from "./components/articles_page_01.js";
 
 
 async function buildStyles() {
@@ -30,6 +32,7 @@ async function buildStyles() {
         "./styles/picture_page.module.css",
         "./styles/tag_page.module.css",
         "./styles/year_page.module.css",
+        "./styles/articles_page.module.css",
         "./styles/about_page.module.css",
         "./styles/privacy_page.module.css",
     ];
@@ -150,7 +153,8 @@ buildRouteInBG("/recent", <RecentPage portfolio={portfolio} />);
 
 buildRouteInBG("/explore", <ExplorePage portfolio={portfolio} />);
 
-//buildRouteInBG("/about", <AboutPage parameter_01="About Page" />);
+buildRouteInBG("/articles", <ArticlesPage />);
+buildRouteInBG("/articles/01_painting_drawing", <ArticlesPage_01 />);
 
 buildRouteInBG("/about", <AboutPage />);
 

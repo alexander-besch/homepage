@@ -39,11 +39,15 @@ export default function IndexPage(props: IndexPageProps): React.ReactNode {
             <PictureList assets={portfolioToShow} />
             <hr />
             <div className="index_page_links">
-                <a href="/recent">Recent works</a>
+                <a href="/recent">Recent Works</a>
             </div>
             <br />
             <div className="index_page_links">
-                <a href="/explore">Explore the collection</a>
+                <a href="/explore">Explore the Collection</a>
+            </div>
+            <br />
+            <div className="index_page_links">
+                <a href="/articles">Articles on Art</a>
             </div>
             <br />
             <hr />
