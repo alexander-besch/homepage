@@ -31,7 +31,7 @@ export default function IndexPage(props: IndexPageProps): React.ReactNode {
                 </div>
             </div>
 
-            <div className="index_page_quote">- nulla dies sine linea -</div>
+            <div className="index_page_quote">- nulla dies sine linea&nbsp;-</div>
             <hr />
             {/* <h2>Headline {props.parameter_01}</h2> */}
 

@@ -23,34 +23,65 @@ export default function ArticlesPage_01(): React.ReactNode {
                     For a moment, we left technique behind and talked about content.
                     And he complained a lot about the first version of my About page.<br />
                     “I just can’t,” I replied. “It’s not the same.”<br />
-                    <br />
-                    I never say anything, but it always makes me shudder when I’m sitting somewhere,
-                    sketchbook on my lap, people passing by, and a father says to his son:<br />
-                    “Look! He is painting.”<br />
-                    No! I am not. I am drawing.<br />
-                    <br />
-                    What’s the point? Actually, there are two.<br />
-                    One is obvious. You draw a line; you paint a small area of colour. What does that mean for a drawing?
-                    Look around you. There are (almost) no lines.
-                    There is the edge of a house: the house is ochre, the background is a light blue sky.
-                    If you paint it, the edge of the house is simply where the ochre ends and the light blue begins.
-                    Easy.<br />
-                    But when you <span className="articles_page_italic">draw</span>, that edge becomes a dark line on white paper.
-                    That sounds normal — but it isn’t. It is a transformation.
-                    We don’t notice it because we are so used to it.
-                    Our mind translates the line back into the edge of a house when looking at the drawing.
-                    That’s why we see a house at all.<br />
-                    I have often wondered whether people with no exposure to representational images might not be able to
-                    translate lines back into edges at all, simply because they are not used to seeing drawings.<br />
-                    <br />
-                    But apart from drawing being a process of transforming what you see into lines, there is another important point.
-                    The pen does not run out of ink. At least, not that quickly. (Don’t mention quills and ink wells…)
-                    When you draw, you are in a flow.<br />
-                    When you paint, the colour sits on the palette, in the paint box.
-                    You load a tiny amount onto your brush, place it on the canvas,
-                    and seconds later it’s gone. Painting is shovelling colour.
-                    Which means you constantly have to interrupt your process. You are not in a flow.<br />
-                    <br />
+                </p >
+
+                <br />
+                <div className="articles_page_text_with_image left">
+                    <div className="articles_page_text_with_image_block">
+                        <a href="/picture/bb973872-2cca-4162-8330-b18aaec5a39a">
+                            <img src="/20231219_132101.jpg" />
+                        </a>
+                        <figcaption>
+                            The Buxted Inn, acrylic
+                        </figcaption>
+                    </div>
+                    <p>
+                        I never say anything, but it always makes me shudder when I’m sitting somewhere,
+                        sketchbook on my lap, people passing by, and a father says to his son:<br />
+                        “Look! He is painting.”<br />
+                        No! I am not. I am drawing.<br />
+                        <br />
+                        What’s the point? Actually, there are two.<br />
+                        One is obvious. You draw a line; you paint a small area of colour. What does that mean for a drawing?
+                        Look around you. There are (almost) no lines.
+                        There is the edge of a house: the house is ochre, the background is a light blue sky.
+                        If you paint it, the edge of the house is simply where the ochre ends and the light blue begins.
+                        Easy.
+                    </p>
+                </div>
+                <br />
+                <div className="articles_page_text_with_image right">
+                    <div className="articles_page_text_with_image_block">
+                        <a href="/picture/c06e10d8-2f3f-4855-9268-fbb48248ef24">
+                            <img src="/20230724_144931_2.JPG" />
+                        </a>
+                        <figcaption>
+                            The Buxted Inn, ink and aquarelle
+                        </figcaption>
+                    </div>
+                    <p>
+                        But when you <span className="articles_page_italic">draw</span>, that edge becomes a dark line on white paper.
+                        That sounds normal — but it isn’t. It is a transformation.
+                        We don’t notice it because we are so used to it.
+                        Our mind translates the line back into the edge of a house when looking at the drawing.
+                        That’s why we see a house at all.<br />
+                        <br />
+                        I have often wondered whether people with no exposure to representational images might not be able to
+                        translate lines back into edges at all, simply because they are not used to seeing drawings.<br />
+                        <br />
+                        But apart from drawing being a process of transforming what you see into lines, there is another important point.
+                        The pen does not run out of ink. At least, not that quickly. (Don’t mention quills and ink wells…)
+                        When you draw, you are in a flow.<br />
+                        When you paint, the colour sits on the palette, in the paint box.
+                        You load a tiny amount onto your brush, place it on the canvas,
+                        and seconds later it’s gone. Painting is shovelling colour.
+                        Which means you constantly have to interrupt your process. You are not in a flow.<br />
+                        <br />
+                    </p>
+                </div>
+                <br />
+                <p>
+
                     I don’t want to judge. I still don’t know which medium I prefer.
                     I only want to say this: painting and drawing are not the same. Not at all!<br />
                     It’s like saying, “Oh, he is playing the guitar,” when he is actually playing the flute.<br />
@@ -63,13 +94,15 @@ export default function ArticlesPage_01(): React.ReactNode {
                         remarkable photographer.</span>
                     <br />
                     <br />
-                    <br />
 
 
 
                 </p>
 
+                <div className="articles_page_favicon">
+                    <img src="/favicon.png" />
 
+                </div>
 
             </div>
         </div>

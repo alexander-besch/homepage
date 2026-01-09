@@ -1,4 +1,3 @@
-import Image from "./image.js";
 import Layout from "./layout.js";
 
 
@@ -36,17 +35,15 @@ export default function AboutPage(): React.ReactNode {
                 </p>
             </div>
 
-            <div className="about_page_image_card">
-                <a href="/picture/64c0b5a9-848d-40a7-8b44-0880b72c2c5f">
-                    <Image inputPath="./resources/20260108_134537.jpg" lazy={false} transparent />
-                </a>
-                <figcaption className="about_page_image_card_caption">
-                    Early pencil drawing, age 17
-                </figcaption>
-            </div>
-
-
-            <div className="about_page_text">
+            <div className="about_page_text_with_image right">
+                <div className="about_page_text_with_image_block">
+                    <a href="/picture/64c0b5a9-848d-40a7-8b44-0880b72c2c5f">
+                        <img src="/20260108_134537.jpg" />
+                    </a>
+                    <figcaption>
+                        Early pencil drawing, age 17
+                    </figcaption>
+                </div>
                 <p>
                     Towards the end of my school years, I bought my first sketchbook,
                     and when I started university, studying mathematics,
@@ -56,11 +53,15 @@ export default function AboutPage(): React.ReactNode {
                     <br />
                     To me, art is not a hobby. I have no better word - "passion" sounds too pathetic.
                     I simply know that I could not think of a life without it.
-                    <br />
-                    <br />
+                </p>
+            </div>
+
+            <div className="about_page_text">
+                <p>
                     I enjoy working on commissions. They make me consider motifs (and sometimes genres)
                     that would otherwise never come to my mind.
-                    So please feel free to <a href="mailto:mail@alexander-besch.com">contact me</a> anytime if there’s something I could create for you.
+                    So please feel free to <a href="mailto:mail@alexander-besch.com">contact me</a> anytime if there’s
+                    something I could create for you.
                     <br />
                     <br />
                 </p>
@@ -72,7 +73,6 @@ export default function AboutPage(): React.ReactNode {
 
             </div>
 
-            <hr />
         </div>
 
     </Layout >
