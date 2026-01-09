@@ -12,7 +12,7 @@ export default function RecentPage(props: RecentPageProps): React.ReactNode {
     const portfolioToShow = [...props.portfolio]
         .filter(a => a.listed)
         .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-        .slice(0, 6);
+        .slice(0, 20);
 
     return <Layout title="Recent works">
 
