@@ -8,7 +8,7 @@ interface RecentPageProps {
 
 export default function RecentPage(props: RecentPageProps): React.ReactNode {
 
-    //show the best x (in slice(0,x)) pictures on index-page
+    //show the best x (in slice(0,x)) pictures on  index-page
     const portfolioToShow = [...props.portfolio]
         .filter(a => a.listed)
         .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
