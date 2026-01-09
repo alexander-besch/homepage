@@ -34,20 +34,26 @@
     padding-bottom: 20px;
 }
 
+
 .articles_page_link a {
+
     color: black;
     font-family: "MyScriptAlexander2";
     text-decoration: none;
-}
 
-.articles_page_link a:focus {
-    text-decoration: none;
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 8px 1px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
 }
 
 .articles_page_link a:hover {
-    background: lightgrey;
+    background-color: lightgrey;
 }
-
 
 
 .articles_page_text a {
