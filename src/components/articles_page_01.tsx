@@ -76,7 +76,6 @@ export default function ArticlesPage_01(): React.ReactNode {
                         You load a tiny amount onto your brush, place it on the canvas,
                         and seconds later it’s gone. Painting is shovelling colour.
                         Which means you constantly have to interrupt your process. You are not in a flow.<br />
-                        <br />
                     </p>
                 </div>
                 <br />
