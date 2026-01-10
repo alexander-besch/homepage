@@ -1,4 +1,4 @@
-.recent_page h1 {
+.chronological_page h1 {
     color: black;
     font-family: "MyScriptAlexander2";
     text-align: center;
@@ -7,22 +7,22 @@
     padding-bottom: 20px;
 }
 
-
-.recent_page_links {
-
-    text-align: center;
-
-}
-
-.recent_page_center {
+.chronological_page_center {
     text-align: center;
 }
 
-.recent_page_links a {
+.chronological_page_link {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+.chronological_page_link a {
 
     color: black;
     font-family: "MyScriptAlexander2";
-    font-size: clamp(2rem, 5vw, 4rem);
     text-decoration: none;
 
     display: inline-block;
@@ -35,6 +35,6 @@
 
 }
 
-.recent_page_links a:hover {
+.chronological_page_link a:hover {
     background-color: lightgrey;
 }

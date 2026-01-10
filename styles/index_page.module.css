@@ -63,21 +63,23 @@
     padding-right: var(--layout-content-padding);
 }
 
-.index_page_links {
 
-    text-align: center;
-
-}
 
 .index_page_center {
     text-align: center;
+}
+
+.index_page_links {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .index_page_links a {
 
     color: black;
     font-family: "MyScriptAlexander2";
-    font-size: clamp(2rem, 5vw, 4rem);
     text-decoration: none;
 
     display: inline-block;

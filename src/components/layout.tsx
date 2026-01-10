@@ -31,7 +31,7 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
                                 <a href="/">Home</a>
                             </div>
                             <div>
-                                <a href="/recent">Recent</a>
+                                <a href="/chronological">Chronological</a>
                             </div>
                             <div>
                                 <a href="/explore">Explore</a>
@@ -61,7 +61,7 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
 
             <div className="layout_navbar_burgeritems">
                 <li><a href="/">Home</a></li>
-                <li><a href="/recent">Recent</a></li>
+                <li><a href="/chronological">Chronological</a></li>
                 <li><a href="/explore">Explore</a></li>
                 <li><a href="/articles">Articles</a></li>
                 <li><a href="/about">About</a></li>
