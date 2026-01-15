@@ -19,7 +19,12 @@
 
 
 .index_page h2 {
-    font-size: 15px;
+    color: black;
+    font-family: "MyScriptAlexander2";
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .index_page p {

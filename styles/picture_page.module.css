@@ -1,12 +1,13 @@
 .picture_page {
+    position: relative;
+    /* Anker für Pfeil */
     display: flex;
     flex-direction: column;
     align-items: center;
+
     --photo-page-margin: 20px;
-
-    margin-bottom: calc(2 * var(--photo-page-margin));
     margin-top: var(--photo-page-margin);
-
+    margin-bottom: calc(var(--photo-page-margin));
 }
 
 .picture_page h1 {
@@ -14,6 +15,15 @@
     font-family: "MyScriptAlexander2";
     text-align: center;
     font-size: clamp(2rem, 5vw, 4rem);
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.picture_page h2 {
+    color: black;
+    font-family: "MyScriptAlexander2";
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 3rem);
     padding-top: 10px;
     padding-bottom: 10px;
 }

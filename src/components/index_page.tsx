@@ -37,12 +37,17 @@ export default function IndexPage(props: IndexPageProps): React.ReactNode {
 
             <PictureList assets={portfolioToShow} />
             <hr />
+            <h2 className="index_page">
+                How to get lost
+            </h2>
             <div className="index_page_center">
                 <p>
-                    A few hints to explore this page:<br />
-                    <br />
-                    Click on any image to see it in a larger view and discover its tags.<br />
-                    On the image page, scrolling further down reveals similar works – a way to dive deeper into my collection!<br />
+                    Click on any image to see it in a larger view.<br />
+                    On each image page, scrolling down reveals similar
+                    works – a way to dive deeper into my collection!<br />
+                </p>
+                <hr />
+                <p>
                     <br />
                     A chronological view of my work<br />
                 </p>
