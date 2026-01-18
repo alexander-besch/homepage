@@ -31,7 +31,6 @@
     line-height: 27px;
 }
 
-
 .index_page_hero {
     height: calc(100vh - var(--layout-nav-height));
     background-image: url("/hero.jpg");
