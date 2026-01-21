@@ -17,6 +17,7 @@ import TagPage from "./components/tag_page.js";
 import YearPage from "./components/year_page.js";
 import ArticlesPage from "./components/articles_page.js";
 import ArticlesPage_01 from "./components/articles_page_01.js";
+import RatingPage from "./components/rating_page.js";
 
 
 async function buildStyles() {
@@ -33,6 +34,7 @@ async function buildStyles() {
         "./styles/tag_page.module.css",
         "./styles/year_page.module.css",
         "./styles/articles_page.module.css",
+        "./styles/rating_page.module.css",
         "./styles/about_page.module.css",
         "./styles/privacy_page.module.css",
     ];
@@ -152,6 +154,8 @@ buildRouteInBG("/", <IndexPage route="/" portfolio={portfolio} />);
 buildRouteInBG("/chronological", <ChronologicalPage portfolio={portfolio} />);
 
 buildRouteInBG("/explore", <ExplorePage portfolio={portfolio} />);
+
+buildRouteInBG("/rating", <RatingPage portfolio={portfolio} />);
 
 buildRouteInBG("/articles", <ArticlesPage />);
 buildRouteInBG("/articles/01_painting_drawing", <ArticlesPage_01 />);
