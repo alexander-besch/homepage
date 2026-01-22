@@ -12,7 +12,7 @@ export default function RecentPage(props: ChronologicalPageProps): React.ReactNo
     const portfolioToShow = [...props.portfolio]
         .filter(a => a.listed)
         .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-        .slice(0, 300);
+        .slice(0, 1000);
 
     return <Layout title="Chronological">
 
