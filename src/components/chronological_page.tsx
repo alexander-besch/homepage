@@ -6,6 +6,7 @@ interface ChronologicalPageProps {
     portfolio: Asset[],
 }
 
+
 export default function RecentPage(props: ChronologicalPageProps): React.ReactNode {
 
     //show the best x (in slice(0,x)) pictures on  index-page
