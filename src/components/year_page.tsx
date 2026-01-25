@@ -9,7 +9,6 @@ interface YearPageProps {
 }
 
 
-
 export default function YearPage(props: YearPageProps): React.ReactNode {
 
     // Nur Bilder aus dem Jahr anzeigen
