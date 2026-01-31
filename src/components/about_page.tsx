@@ -48,19 +48,28 @@ export default function AboutPage(): React.ReactNode {
                     Towards the end of my school years, I bought my first sketchbook,
                     and when I started university, studying mathematics,
                     I also began working with oil paints. Years later, these were replaced by acrylics.
-                    Only recently,
-                    I found my way back to oil paints after realising that they also come in a water-soluble form.<br />
+                    Only recently have I found my way back to oil paints
+                    after realising that they also come in a water-soluble form.<br />
                     <br />
                     To me, art is not a hobby. I have no better word - "passion" sounds too pathetic.
-                    I simply know that I could not think of a life without it.
+                    I simply know that I could not imagine a life without it.
+                    <br />
+                    <br />
+                    If you stroll through these pages,
+                    you will easily see that I am deeply in love with the sea;
+                    that it is nearly impossible for me to go on vacation without one of my sketchbooks;
+                    and that I will never lose my fascination with painting portraits.
                 </p>
             </div>
 
             <div className="about_page_text">
                 <p>
-                    I enjoy working on commissions. They make me consider motifs (and sometimes genres)
+                    I enjoy making art just for myself. But I have also realized that I enjoy working on
+                    commissions.
+                    They make me consider motifs (and sometimes genres)
                     that would otherwise never come to my mind.
-                    So please feel free to <a href="mailto:mail@alexander-besch.com">contact me</a> anytime if there’s
+                    So please feel free to <a href="mailto:mail@alexander-besch.com">contact me</a>
+                    anytime if there’s
                     something I could create for you.
                     <br />
                     <br />

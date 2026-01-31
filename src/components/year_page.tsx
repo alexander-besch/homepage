@@ -16,6 +16,7 @@ export default function YearPage(props: YearPageProps): React.ReactNode {
         .filter(a => a.listed && new Date(a.date).getFullYear().toString() === props.year)
         .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()); // nach Datum absteigend
 
+
     return <Layout title={`Year ${props.year}`}>
         <div className="year_page">
             <h1>Year {props.year}</h1>
