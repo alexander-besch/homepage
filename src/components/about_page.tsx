@@ -62,6 +62,7 @@ export default function AboutPage(): React.ReactNode {
                 </p>
             </div>
 
+
             <div className="about_page_text">
                 <p>
                     I enjoy making art just for myself. But I have also realized that I enjoy working on
