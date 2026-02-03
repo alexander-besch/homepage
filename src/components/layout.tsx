@@ -58,6 +58,7 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
                 </div>
             </div>
 
+
             <div className="layout_navbar_burgeritems">
                 <li><a href="/">Home</a></li>
                 <li><a href="/chronological">Chronological</a></li>
