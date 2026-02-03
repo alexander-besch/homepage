@@ -46,7 +46,6 @@ export default function Layout(props: React.PropsWithChildren<LayoutProps>): Rea
 
                     </div>
 
-
                     <div className="layout_navbar_right">
                         <div>
                             <a href="/">
