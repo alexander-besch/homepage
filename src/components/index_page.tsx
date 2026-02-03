@@ -58,11 +58,11 @@ export default function IndexPage(props: IndexPageProps): React.ReactNode {
             <br />
             <div className="index_page_center">
                 <p>
-                    Explore themes, motifs and materials in<br />
+                    Browse the entire collection using categories and keywords<br />
                 </p>
             </div>
             <div className="index_page_links">
-                <a href="/explore">Explore</a>
+                <a href="/explore">Categories</a>
             </div>
             <br />
             <div className="index_page_center">

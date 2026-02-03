@@ -27,12 +27,12 @@ export default function ExplorePage(props: ExplorePageProps): React.ReactNode {
             props.portfolio.map(asset => new Date(asset.date).getFullYear().toString())
         )
     ).sort((a, b) => parseInt(b) - parseInt(a)); // absteigend
-    return <Layout title="Explore the collection">
+    return <Layout title="Categories">
 
         <div className="explore_page">
 
             <div className="explore_page_text">
-                <h1>Explore the collection</h1>
+                <h1>Categories & Keywords</h1>
                 <hr />
                 <div className="explore_page">
                     <h2>Medium</h2>

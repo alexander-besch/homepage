@@ -68,8 +68,8 @@ export default function AboutPage(): React.ReactNode {
                     commissions.
                     They make me consider motifs (and sometimes genres)
                     that would otherwise never come to my mind.
-                    So please feel free to <a href="mailto:mail@alexander-besch.com">contact me</a>
-                    anytime if there’s
+                    So please feel free to <a href="mailto:mail@alexander-besch.com">contact me</a> anytime
+                    if there’s
                     something I could create for you.
                     <br />
                     <br />

@@ -31,7 +31,7 @@ function getSizeTag(tags: string[]): string | null {
         .replace("cm", " cm");
 }
 
-const nearestNeighbours = 6;
+const nearestNeighbours = 10;
 const antiNeighbours = 0;
 
 interface PicturePageProps {
