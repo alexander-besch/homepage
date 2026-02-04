@@ -38,6 +38,7 @@ async function buildStyles() {
         "./styles/rating_page.module.css",
         "./styles/about_page.module.css",
         "./styles/privacy_page.module.css",
+        "./styles/page_not_found_page.module.css",
     ];
     const destPath = "./deploy/styles.css";
     const sources = await Promise.all(sourcePaths.map(s => fs.promises.readFile(s)));
@@ -167,6 +168,8 @@ buildRouteInBG("/articles", <ArticlesPage />);
 buildRouteInBG("/articles/01_painting_drawing", <ArticlesPage_01 />);
 
 buildRoute404InBG(<PageNotFoundPage />);
+
+// buildRouteInBG("/404", <PageNotFoundPage />);
 
 buildRouteInBG("/about", <AboutPage />);
 
