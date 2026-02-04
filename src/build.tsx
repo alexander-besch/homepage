@@ -18,6 +18,7 @@ import YearPage from "./components/year_page.js";
 import ArticlesPage from "./components/articles_page.js";
 import ArticlesPage_01 from "./components/articles_page_01.js";
 import RatingPage from "./components/rating_page.js";
+import PageNotFoundPage from "./components/page_not_found_page.js";
 
 
 async function buildStyles() {
@@ -96,6 +97,11 @@ function buildRouteInBG(route: string, element: React.ReactNode) {
     buildLoadPathHTMLInBG(`./deploy/${route}/index.html`, element);
 }
 
+function buildRoute404InBG(element: React.ReactNode) {
+    ensureDirExists(`./deploy`)
+    buildLoadPathHTMLInBG(`./deploy/404.html`, element);
+}
+
 // create one html-page for each picture
 async function buildPicture(portfolio: Asset[]) {
     console.log("Building picture");
@@ -159,6 +165,8 @@ buildRouteInBG("/rating", <RatingPage portfolio={portfolio} />);
 
 buildRouteInBG("/articles", <ArticlesPage />);
 buildRouteInBG("/articles/01_painting_drawing", <ArticlesPage_01 />);
+
+buildRoute404InBG(<PageNotFoundPage />);
 
 buildRouteInBG("/about", <AboutPage />);
 

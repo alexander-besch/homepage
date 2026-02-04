@@ -22,6 +22,7 @@
 import * as fs from "fs";
 import path from "path";
 
+
 export function ensureDirExists(dir: string): void {
     if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir, { recursive: true });
