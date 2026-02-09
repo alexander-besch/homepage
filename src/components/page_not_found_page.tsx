@@ -4,6 +4,7 @@ import Layout from "./layout.js";
 export default function PageNotFoundPage(): React.ReactNode {
     return <Layout title="404 Page Not Found">
 
+
         <div className="page_not_found_page">
             <h1>404 Page not found</h1>
             <p>
