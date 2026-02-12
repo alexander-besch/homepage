@@ -17,6 +17,7 @@ import TagPage from "./components/tag_page.js";
 import YearPage from "./components/year_page.js";
 import ArticlesPage from "./components/articles_page.js";
 import ArticlesPage_01 from "./components/articles_page_01.js";
+import ArticlesPage_02 from "./components/articles_page_02.js";
 import RatingPage from "./components/rating_page.js";
 import PageNotFoundPage from "./components/page_not_found_page.js";
 
@@ -166,6 +167,7 @@ buildRouteInBG("/rating", <RatingPage portfolio={portfolio} />);
 
 buildRouteInBG("/articles", <ArticlesPage />);
 buildRouteInBG("/articles/01_painting_drawing", <ArticlesPage_01 />);
+buildRouteInBG("/articles/02_being_colourblind", <ArticlesPage_02 />);
 
 buildRoute404InBG(<PageNotFoundPage />);
 

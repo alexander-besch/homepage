@@ -16,6 +16,10 @@ export default function ArticlesPage(): React.ReactNode {
             </div>
 
 
+            <div className="articles_page_link">
+                <a href="/articles/02_being_colourblind">What It Means to Be Colourblind</a>
+            </div>
+
             <br />
             <br />
 
