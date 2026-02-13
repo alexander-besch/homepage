@@ -41,7 +41,7 @@ export default function ArticlesPage_02(): React.ReactNode {
                         “Which green one do you mean?”<br />
                         “Yoda.”<br />
                         “Yoda is GREEN?!?”<br />
-                        “Well, yes, Daddy, Yoda is green. You didn’t know?”<br />
+                        “Well, yes, Papa, Yoda is green. You didn’t know?”<br />
                         “No ...”<br />
                         “For your whole life? Until today?”<br />
                         “Seems so...”<br />
@@ -49,7 +49,7 @@ export default function ArticlesPage_02(): React.ReactNode {
                         <br />
                         Or you have conversations like this one:<br />
                         <br />
-                        “You made a mistake here, Daddy.”<br />
+                        “You made a mistake here, Papa.”<br />
                         “What?! I never ever make mistakes when building with LEGO bricks.”<br />
                         “You used a green brick. It should have been a brown one.”<br />
                         “Does it? Well, sure! I know what you mean. You mean this one!”<br />
