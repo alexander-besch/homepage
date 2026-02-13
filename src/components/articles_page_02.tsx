@@ -8,7 +8,7 @@ export default function ArticlesPage_02(): React.ReactNode {
 
 
             <div className="articles_page_text">
-                <h1>What It Means to Be Colourblind</h1>
+                <h1>What it means to be Colourblind</h1>
 
 
                 <p>
@@ -16,10 +16,10 @@ export default function ArticlesPage_02(): React.ReactNode {
                     <br />
                     Hey! Mind you — I am not <span className="articles_page_italic">colourblind</span>!
                     I am <span className="articles_page_italic">slightly red-green colour deficient</span>.
-                    That is not the same thing.<br />
+                    It's not the same thing!<br />
                     Therefore, the headline should read:
                 </p >
-                <h1>What It Means to Be Slightly Red-Green Colour Deficient</h1>
+                <h1>What it means to be Slightly Red-Green Colour Deficient</h1>
 
 
                 <p>
@@ -41,20 +41,20 @@ export default function ArticlesPage_02(): React.ReactNode {
                         “Which green one do you mean?”<br />
                         “Yoda.”<br />
                         “Yoda is GREEN?!?”<br />
-                        “Well, yes, Papa, Yoda is green. You didn’t know?”<br />
+                        “Well, yes, Papa, Yoda is green. Didn’t know you?”<br />
                         “No ...”<br />
                         “For your whole life? Until today?”<br />
                         “Seems so...”<br />
-                        “The same holds for Grogu, by the way.”<br />
+                        “It's the same with Grogu, by the way.”<br />
                         <br />
                         Or you have conversations like this one:<br />
                         <br />
                         “You made a mistake here, Papa.”<br />
-                        “What?! I never ever make mistakes when building with LEGO bricks.”<br />
+                        “What?! I never ever make mistakes with LEGO bricks.”<br />
                         “You used a green brick. It should have been a brown one.”<br />
-                        “Does it? Well, sure! I know what you mean. You mean this one!”<br />
+                        “Is that so? Well, sure! I get it. You mean this one!”<br />
                         “Actually, <span className="articles_page_italic">that</span> one is grey.”<br />
-
+                        <br />
                     </p>
                 </div>
                 <br />
@@ -63,21 +63,21 @@ export default function ArticlesPage_02(): React.ReactNode {
                         My children don’t have this deficiency.
                         Even when they were just three years old, they could see things I
                         have never seen.
-                        That was always fascinating to me. If I understand the XY/XX genetics
+                        That always fascinated me. If I understand the XY/XX genetics
                         correctly,
-                        half of the male kids of my daughter might inherit it one day.
-                        I keep telling her she should have at least ten boys to improve the statistics,
-                        but she says she has other plans.<br />
+                        half of my daughter's male kids might inherit it one day.
+                        I keep telling her she should have at least ten boys to improve the odds,
+                        but she says she'd have other plans.<br />
                         <br />
                         It means people sometimes give you a slightly strange look.
-                        In a shop, there were sheep fur pillowcases: some coloured (red, blue),
-                        some natural. I picked a bright one and asked the shop assistant,
-                        “Is this natural?”<br />
-                        She looked at me and said, “Well… I think it is pink.”<br />
+                        A while ago there were sheepskin pillowcases in a shop; some dyed (red, blue),
+                        some left natural. I picked a bright one and asked the shopkeeper,
+                        “This one is undyed, right?”<br />
+                        She looked at me and said, “Well… It's pink...”<br />
                         <br />
                         It means it can take half a century to notice that the roofs of
-                        medieval churches of your home town, the Statue of Liberty, and
-                        other things made of copper are green.<br />
+                        your home town's medieval churches, the Statue of Liberty, and
+                        other copper things are green.<br />
                         <br />
                     </p>
                 </div>
@@ -94,18 +94,20 @@ export default function ArticlesPage_02(): React.ReactNode {
                         </figcaption>
                     </div>
                     <p>
-                        It means you always feel a little uncertain when it comes to painting.
-                        You love blue and yellow, because everything behaves exactly as
-                        expected there. But you have to be careful that ochre and may green
-                        are not placed too close together on the canvas — to you, they can
+                        It also means you always feel a little uncertain when it comes to painting.
+                        You love blue and yellow, because they appear to everyone else exactly as
+                        they do to you. But you have to be careful you don't place ochre and
+                        may green
+                        too close together on the canvas — to you, they can
                         look almost the same. And sometimes you need to ask the people around
-                        you, to help you.<br />
+                        you for help.<br />
                         <br />
                         It means you will never truly understand what you are missing,
                         because you have never known anything else.
-                        The world looks as colourful as it should.
+                        After all, the world looks as colourful as it should.
                         You only notice that people sometimes react differently from
-                        what you expect. And that they smile when there is no reason for smiling.<br />
+                        what you expect. And every now and then they smile when there is no
+                        reason for smiling.<br />
                         <br />
                         And sometimes, you simply stop caring.
                         You don’t bother. You just use whatever colour feels right and paint
