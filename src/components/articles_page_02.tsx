@@ -77,7 +77,7 @@ export default function ArticlesPage_02(): React.ReactNode {
                         <br />
                         It means it can take half a century to notice that the roofs of
                         your home town's medieval churches, the Statue of Liberty, and
-                        copper things are green.<br />
+                        other copper things are green.<br />
                         <br />
                     </p>
                 </div>
