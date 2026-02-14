@@ -23,7 +23,7 @@ export default function ArticlesPage_02(): React.ReactNode {
 
 
                 <p>
-                    First of all it means your kids make fun of you every now and then:<br />
+                    First of all, it means your kids make fun of you every now and then:<br />
                 </p >
 
                 <br />
@@ -41,7 +41,7 @@ export default function ArticlesPage_02(): React.ReactNode {
                         “Which green one do you mean?”<br />
                         “Yoda.”<br />
                         “Yoda is GREEN?!?”<br />
-                        “Well, yes, Papa, Yoda is green. Didn’t know you?”<br />
+                        “Well, yes, Papa, Yoda is green. Didn’t you know?”<br />
                         “No ...”<br />
                         “For your whole life? Until today?”<br />
                         “Seems so...”<br />
