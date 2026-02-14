@@ -26,7 +26,6 @@ export default function ArticlesPage_02(): React.ReactNode {
                     First of all, it means your kids make fun of you every now and then:<br />
                 </p >
 
-
                 <br />
                 <div className="articles_page_text_with_image left">
                     <div className="articles_page_text_with_image_block">
