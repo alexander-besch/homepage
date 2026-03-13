@@ -21,7 +21,6 @@ export default function ArticlesPage_02(): React.ReactNode {
                 </p >
                 <h1>What it means to be Slightly Red-Green Colour Deficient</h1>
 
-
                 <p>
                     First of all, it means your kids make fun of you every now and then:<br />
                 </p >
