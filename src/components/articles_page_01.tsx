@@ -11,6 +11,7 @@ export default function ArticlesPage_01(): React.ReactNode {
                 <h1>Painting and Drawing are not the Same</h1>
 
 
+
                 <p>
                     <span className="articles_page_italic">08.01.2026</span><br />
                     <br />
