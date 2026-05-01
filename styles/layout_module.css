@@ -41,7 +41,7 @@
     height: var(--layout-nav-height);
     padding-left: var(--layout-nav-padding-left);
     padding-right: var(--layout-nav-padding-right);
-    background-color: lightgray;
+    background-color: gray;
 }
 
 .layout_navbar a {
@@ -51,7 +51,7 @@
 }
 
 .layout_navbar_left a:hover {
-    background: grey;
+    background: lightgrey;
 }
 
 
@@ -89,7 +89,7 @@
     width: var(--layout-burger-width);
     height: var(--layout-burger-height);
     border-radius: 3px;
-    background-color: black;
+    background-color: white;
     transition: 0.3s;
 }
 
@@ -135,7 +135,7 @@
 }
 
 .layout_navbar_burgeritems a:hover {
-    background: lightgrey;
+    background: grey;
 }
 
 
@@ -220,18 +220,19 @@
 
 
 .layout_footer {
-    background-color: lightgrey;
+    background-color: grey;
     font-family: "LiberationSans";
     font-size: 16;
+    color: white;
     text-align: center;
     padding: 3px;
 }
 
 .layout_footer a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .layout_footer a:hover {
-    background: grey;
+    background: lightgrey;
 }
