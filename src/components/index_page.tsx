@@ -10,7 +10,7 @@ interface IndexPageProps {
 export default function IndexPage(props: IndexPageProps): React.ReactNode {
 
     //show the best x (in slice(0,x)) pictures on index-page
-    const portfolioToShow = props.portfolio.sort((a, b) => b.rating - a.rating).slice(0, 20);
+    const portfolioToShow = props.portfolio.sort((a, b) => b.rating - a.rating).slice(0, 21);
 
     return <Layout title="Alexander's Art">
 
