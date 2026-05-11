@@ -29,8 +29,6 @@ export default function PrivacyPage(): React.ReactNode {
                 <li>if you're using a mobile device,</li>
                 <li>the size of your screen,</li>
                 <li>the referer (i.e. the page that linked you to my homepage),</li>
-                <li>if you react (i.e., press a like or dislike button) to a page,</li>
-                <li>the comments your write to a page,</li>
                 <li>the time you spend on each page,</li>
                 <li>your IP address and thus from what country you're accesing my homepage and
                     some website diagnostics, like how long my homepage takes to load for you.</li>
