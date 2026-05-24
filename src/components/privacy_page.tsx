@@ -38,6 +38,7 @@ export default function PrivacyPage(): React.ReactNode {
                     more details.<br />
                     <br />
                     This data is anonymized.<br />
+                    <br />
                     I plan on freely publishing this data at some point.
                     Also, I don't plan on deleting this data.<br />
 
