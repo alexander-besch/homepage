@@ -83,7 +83,7 @@ export default function IndexPage(props: IndexPageProps): React.ReactNode {
                 <a href="/about">About</a>
             </div>
             <br />
-            <hr />
+
         </div>
 
     </Layout >

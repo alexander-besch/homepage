@@ -26,7 +26,6 @@ export default function RecentPage(props: ChronologicalPageProps): React.ReactNo
                 <a href="/explore">Explore the collection</a>
             </div>
             <br />
-            <hr />
         </div>
 
     </Layout >

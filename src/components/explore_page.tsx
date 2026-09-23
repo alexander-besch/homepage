@@ -79,7 +79,6 @@ export default function ExplorePage(props: ExplorePageProps): React.ReactNode {
                         ))}
                     </div>
                     <br />
-                    <hr />
 
                 </div>
 

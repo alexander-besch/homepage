@@ -108,7 +108,7 @@ export default function PicturePage(props: PicturePageProps): React.ReactNode {
                 <h2>Similar works:</h2>
             </div>
             <PictureList assets={similarAssets} />
-            <hr />
+            <br />
         </div>
     </Layout>
 
